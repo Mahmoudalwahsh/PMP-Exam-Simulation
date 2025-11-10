@@ -11,26 +11,26 @@ export function PauseModal({ isOpen, onResume }: PauseModalProps) {
 
   return (
     <div 
-      className="fixed inset-0 z-[100] bg-gray-900/90 backdrop-blur-sm flex items-center justify-center"
+      className="fixed inset-0 z-[100] bg-gray-900/90 backdrop-blur-sm flex items-center justify-center p-4"
       data-testid="modal-pause"
     >
-      <div className="bg-card p-12 rounded-lg shadow-2xl max-w-md w-full mx-4 text-center space-y-8">
-        <div className="space-y-4">
-          <div className="w-20 h-20 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
-            <Play className="h-10 w-10 text-primary" />
+      <div className="bg-card p-6 sm:p-8 md:p-12 rounded-lg shadow-2xl max-w-md w-full text-center space-y-6 sm:space-y-8">
+        <div className="space-y-3 sm:space-y-4">
+          <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
+            <Play className="h-8 w-8 sm:h-10 sm:w-10 text-primary" />
           </div>
-          <h2 className="text-3xl font-bold">Exam Paused</h2>
-          <p className="text-muted-foreground text-lg">
+          <h2 className="text-2xl sm:text-3xl font-bold">Exam Paused</h2>
+          <p className="text-muted-foreground text-sm sm:text-base md:text-lg px-2 sm:px-0">
             The timer has been paused. Click resume when you're ready to continue.
           </p>
         </div>
         <Button
           size="lg"
           onClick={onResume}
-          className="w-full text-base"
+          className="w-full text-sm sm:text-base"
           data-testid="button-resume"
         >
-          <Play className="h-5 w-5 mr-2" />
+          <Play className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
           Resume Exam
         </Button>
       </div>

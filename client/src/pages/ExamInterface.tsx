@@ -267,58 +267,69 @@ export default function ExamInterface() {
   return (
     <>
       <div className="min-h-screen bg-background flex flex-col">
-        <header className="sticky top-0 z-50 bg-card border-b border-card-border px-8 py-4">
-          <div className="max-w-7xl mx-auto flex items-center justify-between gap-6">
-            <div className="flex items-center gap-6">
-              <img 
-                src={patronsLogo} 
-                alt="Patrons Consulting" 
-                className="h-8 w-auto"
-                data-testid="img-patrons-logo-header"
-              />
-              <div className="flex items-center gap-2">
-                <Clock className={`h-5 w-5 ${timeColor}`} />
-                <span 
-                  className={`text-2xl font-bold tabular-nums ${timeColor}`}
-                  data-testid="text-timer"
+        <header className="sticky top-0 z-50 bg-card border-b border-card-border px-4 sm:px-6 md:px-8 py-3 sm:py-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
+              <div className="flex items-center justify-between sm:justify-start gap-3 sm:gap-6">
+                <img 
+                  src={patronsLogo} 
+                  alt="Patrons Consulting" 
+                  className="h-6 sm:h-8 w-auto"
+                  data-testid="img-patrons-logo-header"
+                />
+                <div className="flex items-center gap-2">
+                  <Clock className={`h-4 sm:h-5 w-4 sm:w-5 ${timeColor}`} />
+                  <span 
+                    className={`text-xl sm:text-2xl font-bold tabular-nums ${timeColor}`}
+                    data-testid="text-timer"
+                  >
+                    {formatTime(timeRemaining)}
+                  </span>
+                </div>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  onClick={() => setIsPaused(!isPaused)}
+                  data-testid="button-pause"
+                  className="sm:hidden"
                 >
-                  {formatTime(timeRemaining)}
-                </span>
+                  {isPaused ? <Play className="h-4 w-4" /> : <Pause className="h-4 w-4" />}
+                </Button>
               </div>
-            </div>
-            
-            <h1 className="text-base font-semibold text-center flex-1" data-testid="text-exam-title">
-              {exam.title}
-            </h1>
-            
-            <div className="flex items-center gap-4">
-              <span className="text-sm text-muted-foreground" data-testid="text-progress">
-                {answeredCount} / {exam.questions.length} Answered
-              </span>
-              <Button
-                variant="outline"
-                size="icon"
-                onClick={() => setIsPaused(!isPaused)}
-                data-testid="button-pause"
-              >
-                {isPaused ? <Play className="h-4 w-4" /> : <Pause className="h-4 w-4" />}
-              </Button>
+              
+              <div className="flex items-center justify-between sm:justify-end gap-2 sm:gap-4 min-w-0">
+                <h1 className="text-xs font-medium truncate max-w-[65%] sm:flex-1 sm:text-base sm:font-semibold sm:text-center sm:max-w-none" data-testid="text-exam-title">
+                  {exam.title}
+                </h1>
+                <span className="text-xs sm:text-sm text-muted-foreground whitespace-nowrap" data-testid="text-progress">
+                  {answeredCount} / {exam.questions.length}
+                </span>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  onClick={() => setIsPaused(!isPaused)}
+                  data-testid="button-pause-desktop"
+                  className="hidden sm:flex flex-shrink-0"
+                >
+                  {isPaused ? <Play className="h-4 w-4" /> : <Pause className="h-4 w-4" />}
+                </Button>
+              </div>
             </div>
           </div>
         </header>
 
         <main className="flex-1 overflow-y-auto">
-          <div className="max-w-5xl mx-auto px-8 py-8">
-            <Card className="p-8">
-              <div className="space-y-6">
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex items-center gap-3">
-                    <div className="bg-primary text-primary-foreground px-3 py-1 rounded-md text-sm font-semibold uppercase tracking-wider">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 py-4 sm:py-6 md:py-8">
+            <Card className="p-4 sm:p-6 md:p-8">
+              <div className="space-y-4 sm:space-y-6">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-4">
+                  <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
+                    <div className="bg-primary text-primary-foreground px-2.5 sm:px-3 py-1 rounded-md text-xs sm:text-sm font-semibold uppercase tracking-wider">
                       Question {currentQuestionIndex + 1}
                     </div>
                     {currentAnswer?.isMarked && (
-                      <div className="bg-warning text-warning-foreground px-3 py-1 rounded-md text-sm font-medium flex items-center gap-1.5">
-                        <AlertTriangle className="h-3.5 w-3.5" />
+                      <div className="bg-warning text-warning-foreground px-2.5 sm:px-3 py-1 rounded-md text-xs sm:text-sm font-medium flex items-center gap-1.5">
+                        <AlertTriangle className="h-3 sm:h-3.5 w-3 sm:w-3.5" />
                         Marked
                       </div>
                     )}
@@ -328,24 +339,26 @@ export default function ExamInterface() {
                     size="sm"
                     onClick={() => setShowNavigator(true)}
                     data-testid="button-show-navigator"
+                    className="self-start"
                   >
                     <Grid3x3 className="h-4 w-4 mr-2" />
-                    All Questions
+                    <span className="hidden sm:inline">All Questions</span>
+                    <span className="sm:hidden">Questions</span>
                   </Button>
                 </div>
 
                 <div className="prose max-w-none">
-                  <p className="text-lg leading-relaxed text-foreground" data-testid="text-question">
+                  <p className="text-base sm:text-lg leading-relaxed text-foreground" data-testid="text-question">
                     {currentQuestion.question}
                   </p>
                   {currentQuestion.type === "multiple" && (
-                    <p className="text-sm text-muted-foreground mt-2">
+                    <p className="text-xs sm:text-sm text-muted-foreground mt-2">
                       Select all that apply
                     </p>
                   )}
                 </div>
 
-                <div className="space-y-3 mt-8">
+                <div className="space-y-2 sm:space-y-3 mt-6 sm:mt-8">
                   {currentQuestion.type === "single" ? (
                     currentQuestion.options.map((option, index) => {
                       const isSelected = currentAnswer.type === "single" && currentAnswer.selectedAnswer === index;
@@ -353,20 +366,20 @@ export default function ExamInterface() {
                         <button
                           key={index}
                           onClick={() => handleAnswerSelect(index)}
-                          className={`w-full text-left p-4 border rounded-lg transition-all hover-elevate ${
+                          className={`w-full text-left p-3 sm:p-4 border rounded-lg transition-all hover-elevate ${
                             isSelected ? "border-primary bg-primary/5" : "border-border"
                           }`}
                           data-testid={`button-option-${index}`}
                         >
-                          <div className="flex items-start gap-3">
-                            <div className={`flex-shrink-0 w-6 h-6 rounded-full border-2 flex items-center justify-center mt-0.5 ${
+                          <div className="flex items-start gap-2.5 sm:gap-3">
+                            <div className={`flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 rounded-full border-2 flex items-center justify-center mt-0.5 ${
                               isSelected ? "border-primary bg-primary" : "border-border"
                             }`}>
                               {isSelected && (
-                                <div className="w-2 h-2 rounded-full bg-primary-foreground"></div>
+                                <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-primary-foreground"></div>
                               )}
                             </div>
-                            <span className="flex-1 text-base">{option}</span>
+                            <span className="flex-1 text-sm sm:text-base leading-relaxed">{option}</span>
                           </div>
                         </button>
                       );
@@ -378,20 +391,20 @@ export default function ExamInterface() {
                         <button
                           key={index}
                           onClick={() => handleMultipleAnswerToggle(index)}
-                          className={`w-full text-left p-4 border rounded-lg transition-all hover-elevate ${
+                          className={`w-full text-left p-3 sm:p-4 border rounded-lg transition-all hover-elevate ${
                             isSelected ? "border-primary bg-primary/5" : "border-border"
                           }`}
                           data-testid={`button-option-${index}`}
                         >
-                          <div className="flex items-start gap-3">
-                            <div className={`flex-shrink-0 w-6 h-6 rounded-md border-2 flex items-center justify-center mt-0.5 ${
+                          <div className="flex items-start gap-2.5 sm:gap-3">
+                            <div className={`flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 rounded-md border-2 flex items-center justify-center mt-0.5 ${
                               isSelected ? "border-primary bg-primary" : "border-border"
                             }`}>
                               {isSelected && (
-                                <Check className="w-4 h-4 text-primary-foreground" />
+                                <Check className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary-foreground" />
                               )}
                             </div>
-                            <span className="flex-1 text-base">{option}</span>
+                            <span className="flex-1 text-sm sm:text-base leading-relaxed">{option}</span>
                           </div>
                         </button>
                       );
@@ -415,42 +428,48 @@ export default function ExamInterface() {
           </div>
         </main>
 
-        <footer className="sticky bottom-0 z-50 bg-card border-t border-card-border px-8 py-4">
-          <div className="max-w-5xl mx-auto flex items-center justify-between gap-4">
-            <Button
-              variant="outline"
-              onClick={handlePrevious}
-              disabled={currentQuestionIndex === 0}
-              data-testid="button-previous"
-            >
-              <ChevronLeft className="h-4 w-4 mr-2" />
-              Previous
-            </Button>
+        <footer className="sticky bottom-0 z-50 bg-card border-t border-card-border px-4 sm:px-6 md:px-8 py-3 sm:py-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
+              <div className="flex items-center gap-2 sm:gap-4 order-2 sm:order-1">
+                <Button
+                  variant="outline"
+                  onClick={handlePrevious}
+                  disabled={currentQuestionIndex === 0}
+                  data-testid="button-previous"
+                  className="flex-1 sm:flex-none"
+                >
+                  <ChevronLeft className="h-4 w-4 mr-2" />
+                  Previous
+                </Button>
+                <Button
+                  variant="outline"
+                  onClick={handleNext}
+                  disabled={currentQuestionIndex === exam.questions.length - 1}
+                  data-testid="button-next"
+                  className="flex-1 sm:flex-none"
+                >
+                  Next
+                  <ChevronRight className="h-4 w-4 ml-2" />
+                </Button>
+              </div>
 
-            <div className="flex items-center gap-4">
-              {markedCount > 0 && (
-                <span className="text-sm text-muted-foreground">
-                  {markedCount} marked for review
-                </span>
-              )}
-              <Button
-                variant="destructive"
-                onClick={() => setShowSubmitDialog(true)}
-                data-testid="button-submit"
-              >
-                Submit Exam
-              </Button>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 order-1 sm:order-2">
+                {markedCount > 0 && (
+                  <span className="text-xs sm:text-sm text-muted-foreground text-center">
+                    {markedCount} marked for review
+                  </span>
+                )}
+                <Button
+                  variant="destructive"
+                  onClick={() => setShowSubmitDialog(true)}
+                  data-testid="button-submit"
+                  className="w-full sm:w-auto"
+                >
+                  Submit Exam
+                </Button>
+              </div>
             </div>
-
-            <Button
-              variant="outline"
-              onClick={handleNext}
-              disabled={currentQuestionIndex === exam.questions.length - 1}
-              data-testid="button-next"
-            >
-              Next
-              <ChevronRight className="h-4 w-4 ml-2" />
-            </Button>
           </div>
         </footer>
       </div>

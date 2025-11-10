@@ -165,17 +165,17 @@ export default function ResultsPage() {
 
   if (!results) {
     return (
-      <div className="min-h-screen bg-background flex items-center justify-center">
-        <Card className="p-8 max-w-md">
+      <div className="min-h-screen bg-background flex items-center justify-center p-4">
+        <Card className="p-6 sm:p-8 max-w-md w-full">
           <div className="text-center space-y-4">
-            <AlertTriangle className="h-12 w-12 mx-auto text-warning" />
+            <AlertTriangle className="h-10 sm:h-12 w-10 sm:w-12 mx-auto text-warning" />
             <div className="space-y-2">
-              <h2 className="text-xl font-semibold">No Results Found</h2>
-              <p className="text-muted-foreground">
+              <h2 className="text-lg sm:text-xl font-semibold">No Results Found</h2>
+              <p className="text-sm sm:text-base text-muted-foreground">
                 Please complete an exam to view results.
               </p>
             </div>
-            <Button onClick={() => setLocation("/")} data-testid="button-back-home">
+            <Button onClick={() => setLocation("/")} data-testid="button-back-home" className="w-full sm:w-auto">
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Home
             </Button>
@@ -187,8 +187,8 @@ export default function ResultsPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="mb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8 md:py-12">
+        <div className="mb-6 sm:mb-8">
           <Button
             variant="outline"
             onClick={() => setLocation("/")}
@@ -199,30 +199,30 @@ export default function ResultsPage() {
           </Button>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-6 sm:space-y-8">
           <Card className="overflow-hidden">
-            <div className={`p-12 text-center ${
+            <div className={`p-6 sm:p-8 md:p-12 text-center ${
               results.passed ? "bg-success/10" : "bg-destructive/10"
             }`}>
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 {results.passed ? (
-                  <CheckCircle2 className="h-16 w-16 mx-auto text-success" data-testid="icon-passed" />
+                  <CheckCircle2 className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 mx-auto text-success" data-testid="icon-passed" />
                 ) : (
-                  <XCircle className="h-16 w-16 mx-auto text-destructive" data-testid="icon-failed" />
+                  <XCircle className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 mx-auto text-destructive" data-testid="icon-failed" />
                 )}
                 <div className="space-y-2">
-                  <h1 className="text-4xl font-bold" data-testid="text-exam-title">
+                  <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold px-4 sm:px-0" data-testid="text-exam-title">
                     {results.examTitle}
                   </h1>
-                  <p className="text-6xl font-bold" data-testid="text-score">
+                  <p className="text-4xl sm:text-5xl md:text-6xl font-bold" data-testid="text-score">
                     {results.percentage}%
                   </p>
-                  <p className={`text-xl font-semibold ${
+                  <p className={`text-lg sm:text-xl font-semibold ${
                     results.passed ? "text-success" : "text-destructive"
                   }`} data-testid="text-status">
                     {results.passed ? "PASSED" : "FAILED"}
                   </p>
-                  <p className="text-muted-foreground" data-testid="text-correct-count">
+                  <p className="text-sm sm:text-base text-muted-foreground px-4 sm:px-0" data-testid="text-correct-count">
                     {results.correctAnswers} out of {results.totalQuestions} questions correct
                   </p>
                 </div>
@@ -231,8 +231,8 @@ export default function ResultsPage() {
           </Card>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-6">Performance by Domain</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <h2 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">Performance by Domain</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {results.domainResults.map((domain) => (
                 <Card key={domain.domain} data-testid={`card-domain-${domain.domain}`}>
                   <CardHeader>
@@ -255,7 +255,7 @@ export default function ResultsPage() {
                         />
                       </div>
                       <div className="text-right">
-                        <span className={`text-2xl font-bold ${
+                        <span className={`text-xl sm:text-2xl font-bold ${
                           domain.percentage >= 61 ? "text-success" : "text-destructive"
                         }`} data-testid={`text-domain-percentage-${domain.domain}`}>
                           {domain.percentage}%
@@ -269,18 +269,19 @@ export default function ResultsPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-6">Detailed Answer Review</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">Detailed Answer Review</h2>
             <Card>
-              <Table>
-                <TableHeader>
-                  <TableRow>
-                    <TableHead className="w-16">Q#</TableHead>
-                    <TableHead>Question</TableHead>
-                    <TableHead className="w-32">Your Answer</TableHead>
-                    <TableHead className="w-32">Correct Answer</TableHead>
-                    <TableHead className="w-24">Result</TableHead>
-                  </TableRow>
-                </TableHeader>
+              <div className="overflow-x-auto">
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead className="w-12 sm:w-16">Q#</TableHead>
+                      <TableHead className="min-w-[200px] sm:min-w-[300px]">Question</TableHead>
+                      <TableHead className="w-24 sm:w-32">Your Answer</TableHead>
+                      <TableHead className="w-24 sm:w-32">Correct Answer</TableHead>
+                      <TableHead className="w-16 sm:w-24">Result</TableHead>
+                    </TableRow>
+                  </TableHeader>
                 <TableBody>
                   {results.questionResults.map((result, index) => (
                     <TableRow key={result.questionId} data-testid={`row-question-${result.questionId}`}>
@@ -381,6 +382,7 @@ export default function ResultsPage() {
                   ))}
                 </TableBody>
               </Table>
+              </div>
             </Card>
           </div>
         </div>

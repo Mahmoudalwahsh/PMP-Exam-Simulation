@@ -26,21 +26,21 @@ export default function ExamSelection() {
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center">
-      <div className="max-w-2xl w-full mx-auto px-6 py-12">
-        <div className="mb-12 text-center space-y-6">
+      <div className="max-w-2xl w-full mx-auto px-4 sm:px-6 py-6 sm:py-12">
+        <div className="mb-6 sm:mb-12 text-center space-y-4 sm:space-y-6">
           <div className="flex justify-center">
             <img 
               src={patronsLogo} 
               alt="Patrons Consulting" 
-              className="h-16 w-auto"
+              className="h-12 sm:h-16 w-auto"
               data-testid="img-patrons-logo"
             />
           </div>
           <div>
-            <h1 className="text-4xl font-bold mb-4 text-foreground">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-foreground">
               PMP Exam Simulator
             </h1>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed px-2 sm:px-0">
               Practice for your Project Management Professional certification with realistic exam simulations
             </p>
           </div>
@@ -51,9 +51,9 @@ export default function ExamSelection() {
             <Loader2 className="h-8 w-8 animate-spin text-primary" data-testid="loading-spinner" />
           </div>
         ) : exams && exams.length > 0 ? (
-          <Card className="p-8">
-            <div className="space-y-6">
-              <div className="space-y-3">
+          <Card className="p-4 sm:p-6 md:p-8">
+            <div className="space-y-4 sm:space-y-6">
+              <div className="space-y-2 sm:space-y-3">
                 <label className="text-sm font-medium text-foreground">
                   Select an Exam
                 </label>
@@ -94,15 +94,15 @@ export default function ExamSelection() {
               </div>
 
               {selectedExam && (
-                <div className="bg-muted/50 border border-border rounded-md p-6">
-                  <div className="space-y-3">
-                    <h3 className="font-semibold text-lg text-foreground">
+                <div className="bg-muted/50 border border-border rounded-md p-4 sm:p-6">
+                  <div className="space-y-2 sm:space-y-3">
+                    <h3 className="font-semibold text-base sm:text-lg text-foreground">
                       {selectedExam.title}
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       {selectedExam.description}
                     </p>
-                    <div className="flex items-center gap-6 text-sm text-foreground pt-2">
+                    <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-sm text-foreground pt-2">
                       <div className="flex items-center gap-2">
                         <FileText className="h-4 w-4 text-primary" />
                         <span data-testid="text-selected-question-count">
@@ -132,12 +132,12 @@ export default function ExamSelection() {
             </div>
           </Card>
         ) : (
-          <Card className="p-12">
+          <Card className="p-6 sm:p-8 md:p-12">
             <div className="text-center space-y-4">
-              <FileText className="h-12 w-12 mx-auto text-muted-foreground" />
+              <FileText className="h-10 sm:h-12 w-10 sm:w-12 mx-auto text-muted-foreground" />
               <div className="space-y-2">
-                <h3 className="text-xl font-semibold">No Exams Available</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-lg sm:text-xl font-semibold">No Exams Available</h3>
+                <p className="text-sm sm:text-base text-muted-foreground px-2 sm:px-0">
                   No exam files were found. Please add exam JSON files to the exams folder.
                 </p>
               </div>

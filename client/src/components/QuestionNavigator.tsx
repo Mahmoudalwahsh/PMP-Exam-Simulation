@@ -28,12 +28,12 @@ export function QuestionNavigator({
 
   return (
     <div 
-      className="fixed inset-0 z-[100] bg-gray-900/90 backdrop-blur-sm flex items-center justify-center p-6"
+      className="fixed inset-0 z-[100] bg-gray-900/90 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6"
       data-testid="modal-navigator"
     >
       <div className="bg-card rounded-lg shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden flex flex-col">
-        <div className="flex items-center justify-between p-6 border-b border-card-border">
-          <h2 className="text-2xl font-semibold">Question Navigator</h2>
+        <div className="flex items-center justify-between p-4 sm:p-6 border-b border-card-border">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold">Question Navigator</h2>
           <Button
             variant="ghost"
             size="icon"
@@ -44,9 +44,9 @@ export function QuestionNavigator({
           </Button>
         </div>
 
-        <div className="p-6 flex-1 overflow-y-auto">
-          <div className="space-y-6">
-            <div className="flex items-center gap-6 text-sm">
+        <div className="p-4 sm:p-6 flex-1 overflow-y-auto">
+          <div className="space-y-4 sm:space-y-6">
+            <div className="grid grid-cols-2 sm:flex sm:items-center gap-3 sm:gap-6 text-xs sm:text-sm">
               <div className="flex items-center gap-2">
                 <div className="w-4 h-4 rounded bg-primary"></div>
                 <span className="text-muted-foreground">Current</span>
@@ -65,7 +65,7 @@ export function QuestionNavigator({
               </div>
             </div>
 
-            <div className="grid grid-cols-10 gap-3">
+            <div className="grid grid-cols-5 sm:grid-cols-8 md:grid-cols-10 gap-2 sm:gap-3">
               {questions.map((_, index) => {
                 const answer = answers[index];
                 const isAnswered = answer.type === "single" 
@@ -108,7 +108,7 @@ export function QuestionNavigator({
           </div>
         </div>
 
-        <div className="p-6 border-t border-card-border">
+        <div className="p-4 sm:p-6 border-t border-card-border">
           <Button onClick={onClose} className="w-full" data-testid="button-close-navigator-bottom">
             Close Navigator
           </Button>
