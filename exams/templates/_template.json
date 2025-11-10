@@ -1,0 +1,66 @@
+{
+  "id": "your-exam-id-here",
+  "title": "Your Exam Title Here",
+  "description": "Brief description of your exam (shown on exam selection page)",
+  "duration": 230,
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "question": "Example single-answer question: What is the primary purpose of a project charter?",
+      "options": [
+        "To document the project budget",
+        "To formally authorize the project and provide the project manager with authority",
+        "To list all project stakeholders",
+        "To define the project schedule"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The project charter formally authorizes the project and provides the project manager with the authority to apply organizational resources to project activities. While it may contain budget information and stakeholder lists, its primary purpose is authorization.",
+      "domain": "Process"
+    },
+    {
+      "id": 2,
+      "type": "multiple",
+      "question": "Example multiple-answer question: Which of the following are benefits of using an iterative development approach? (Select all that apply)",
+      "options": [
+        "Faster feedback from stakeholders",
+        "Reduced need for testing",
+        "Ability to adapt to changing requirements",
+        "Lower overall project costs in all cases"
+      ],
+      "correctAnswers": [0, 2],
+      "minSelections": 2,
+      "maxSelections": 4,
+      "explanation": "Iterative development provides faster feedback from stakeholders and enables the team to adapt to changing requirements. However, it does not reduce the need for testing (testing is still crucial in each iteration), and it doesn't guarantee lower costs in all cases.",
+      "domain": "Process"
+    },
+    {
+      "id": 3,
+      "type": "single",
+      "question": "What is the difference between a risk and an issue?",
+      "options": [
+        "There is no difference, they are the same thing",
+        "A risk is an uncertain event that may occur in the future; an issue is a problem that currently exists",
+        "An issue is more severe than a risk",
+        "Risks are documented in the issue log"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A risk is an uncertain event or condition that, if it occurs, has a positive or negative effect on project objectives. An issue is a current condition or problem that is already affecting the project and requires immediate attention.",
+      "domain": "Process"
+    },
+    {
+      "id": 4,
+      "type": "multiple",
+      "question": "Which of the following are characteristics of servant leadership? (Select all that apply)",
+      "options": [
+        "Focuses on the growth and well-being of team members",
+        "Makes all decisions independently",
+        "Removes impediments for the team",
+        "Emphasizes command and control"
+      ],
+      "correctAnswers": [0, 2],
+      "explanation": "Servant leadership focuses on the growth and well-being of team members and communities. Servant leaders help remove impediments and barriers for the team. They do not make decisions independently or use command-and-control approaches.",
+      "domain": "People"
+    }
+  ]
+}

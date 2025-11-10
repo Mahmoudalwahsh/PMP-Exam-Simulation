@@ -1,0 +1,2348 @@
+{
+  "id": "pmp-full-exam-1",
+  "title": "PMP Full Practice Exam - 180 Questions",
+  "description": "Complete 180-question PMP practice exam covering People, Process, and Business Environment domains with 230-minute time limit",
+  "duration": 230,
+  "questions": [
+    {
+      "id": 1,
+      "question": "A team member is underperforming on critical tasks. What should you do first? (Scenario 1)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "People"
+    },
+    {
+      "id": 2,
+      "question": "Two stakeholders have conflicting requirements. How should you resolve this? (Scenario 2)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "People"
+    },
+    {
+      "id": 3,
+      "question": "Your team is resistant to a new process. What is the best approach? (Scenario 3)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "People"
+    },
+    {
+      "id": 4,
+      "question": "A key team member wants to leave the project. What should you do? (Scenario 4)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "People"
+    },
+    {
+      "id": 5,
+      "question": "Team morale is low after a failed sprint. How should you address this? (Scenario 5)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "People"
+    },
+    {
+      "id": 6,
+      "question": "A team member is underperforming on critical tasks. What should you do first? (Scenario 6)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "People"
+    },
+    {
+      "id": 7,
+      "question": "Two stakeholders have conflicting requirements. How should you resolve this? (Scenario 7)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "People"
+    },
+    {
+      "id": 8,
+      "question": "Your team is resistant to a new process. What is the best approach? (Scenario 8)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "People"
+    },
+    {
+      "id": 9,
+      "question": "A key team member wants to leave the project. What should you do? (Scenario 9)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "People"
+    },
+    {
+      "id": 10,
+      "question": "Team morale is low after a failed sprint. How should you address this? (Scenario 10)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "People"
+    },
+    {
+      "id": 11,
+      "question": "A team member is underperforming on critical tasks. What should you do first? (Scenario 11)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "People"
+    },
+    {
+      "id": 12,
+      "question": "Two stakeholders have conflicting requirements. How should you resolve this? (Scenario 12)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "People"
+    },
+    {
+      "id": 13,
+      "question": "Your team is resistant to a new process. What is the best approach? (Scenario 13)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "People"
+    },
+    {
+      "id": 14,
+      "question": "A key team member wants to leave the project. What should you do? (Scenario 14)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "People"
+    },
+    {
+      "id": 15,
+      "question": "Team morale is low after a failed sprint. How should you address this? (Scenario 15)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "People"
+    },
+    {
+      "id": 16,
+      "question": "A team member is underperforming on critical tasks. What should you do first? (Scenario 16)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "People"
+    },
+    {
+      "id": 17,
+      "question": "Two stakeholders have conflicting requirements. How should you resolve this? (Scenario 17)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "People"
+    },
+    {
+      "id": 18,
+      "question": "Your team is resistant to a new process. What is the best approach? (Scenario 18)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "People"
+    },
+    {
+      "id": 19,
+      "question": "A key team member wants to leave the project. What should you do? (Scenario 19)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "People"
+    },
+    {
+      "id": 20,
+      "question": "Team morale is low after a failed sprint. How should you address this? (Scenario 20)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "People"
+    },
+    {
+      "id": 21,
+      "question": "A team member is underperforming on critical tasks. What should you do first? (Scenario 21)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "People"
+    },
+    {
+      "id": 22,
+      "question": "Two stakeholders have conflicting requirements. How should you resolve this? (Scenario 22)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "People"
+    },
+    {
+      "id": 23,
+      "question": "Your team is resistant to a new process. What is the best approach? (Scenario 23)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "People"
+    },
+    {
+      "id": 24,
+      "question": "A key team member wants to leave the project. What should you do? (Scenario 24)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "People"
+    },
+    {
+      "id": 25,
+      "question": "Team morale is low after a failed sprint. How should you address this? (Scenario 25)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "People"
+    },
+    {
+      "id": 26,
+      "question": "A team member is underperforming on critical tasks. What should you do first? (Scenario 26)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "People"
+    },
+    {
+      "id": 27,
+      "question": "Two stakeholders have conflicting requirements. How should you resolve this? (Scenario 27)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "People"
+    },
+    {
+      "id": 28,
+      "question": "Your team is resistant to a new process. What is the best approach? (Scenario 28)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "People"
+    },
+    {
+      "id": 29,
+      "question": "A key team member wants to leave the project. What should you do? (Scenario 29)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "People"
+    },
+    {
+      "id": 30,
+      "question": "Team morale is low after a failed sprint. How should you address this? (Scenario 30)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "People"
+    },
+    {
+      "id": 31,
+      "question": "A team member is underperforming on critical tasks. What should you do first? (Scenario 31)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "People"
+    },
+    {
+      "id": 32,
+      "question": "Two stakeholders have conflicting requirements. How should you resolve this? (Scenario 32)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "People"
+    },
+    {
+      "id": 33,
+      "question": "Your team is resistant to a new process. What is the best approach? (Scenario 33)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "People"
+    },
+    {
+      "id": 34,
+      "question": "A key team member wants to leave the project. What should you do? (Scenario 34)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "People"
+    },
+    {
+      "id": 35,
+      "question": "Team morale is low after a failed sprint. How should you address this? (Scenario 35)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "People"
+    },
+    {
+      "id": 36,
+      "question": "A team member is underperforming on critical tasks. What should you do first? (Scenario 36)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "People"
+    },
+    {
+      "id": 37,
+      "question": "Two stakeholders have conflicting requirements. How should you resolve this? (Scenario 37)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "People"
+    },
+    {
+      "id": 38,
+      "question": "Your team is resistant to a new process. What is the best approach? (Scenario 38)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "People"
+    },
+    {
+      "id": 39,
+      "question": "A key team member wants to leave the project. What should you do? (Scenario 39)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "People"
+    },
+    {
+      "id": 40,
+      "question": "Team morale is low after a failed sprint. How should you address this? (Scenario 40)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "People"
+    },
+    {
+      "id": 41,
+      "question": "A team member is underperforming on critical tasks. What should you do first? (Scenario 41)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "People"
+    },
+    {
+      "id": 42,
+      "question": "Two stakeholders have conflicting requirements. How should you resolve this? (Scenario 42)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "People"
+    },
+    {
+      "id": 43,
+      "question": "Your team is resistant to a new process. What is the best approach? (Scenario 43)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "People"
+    },
+    {
+      "id": 44,
+      "question": "A key team member wants to leave the project. What should you do? (Scenario 44)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "People"
+    },
+    {
+      "id": 45,
+      "question": "Team morale is low after a failed sprint. How should you address this? (Scenario 45)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "People"
+    },
+    {
+      "id": 46,
+      "question": "A team member is underperforming on critical tasks. What should you do first? (Scenario 46)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "People"
+    },
+    {
+      "id": 47,
+      "question": "Two stakeholders have conflicting requirements. How should you resolve this? (Scenario 47)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "People"
+    },
+    {
+      "id": 48,
+      "question": "Your team is resistant to a new process. What is the best approach? (Scenario 48)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "People"
+    },
+    {
+      "id": 49,
+      "question": "A key team member wants to leave the project. What should you do? (Scenario 49)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "People"
+    },
+    {
+      "id": 50,
+      "question": "Team morale is low after a failed sprint. How should you address this? (Scenario 50)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "People"
+    },
+    {
+      "id": 51,
+      "question": "A team member is underperforming on critical tasks. What should you do first? (Scenario 51)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "People"
+    },
+    {
+      "id": 52,
+      "question": "Two stakeholders have conflicting requirements. How should you resolve this? (Scenario 52)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "People"
+    },
+    {
+      "id": 53,
+      "question": "Your team is resistant to a new process. What is the best approach? (Scenario 53)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "People"
+    },
+    {
+      "id": 54,
+      "question": "A key team member wants to leave the project. What should you do? (Scenario 54)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "People"
+    },
+    {
+      "id": 55,
+      "question": "Team morale is low after a failed sprint. How should you address this? (Scenario 55)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "People"
+    },
+    {
+      "id": 56,
+      "question": "A team member is underperforming on critical tasks. What should you do first? (Scenario 56)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "People"
+    },
+    {
+      "id": 57,
+      "question": "Two stakeholders have conflicting requirements. How should you resolve this? (Scenario 57)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "People"
+    },
+    {
+      "id": 58,
+      "question": "Your team is resistant to a new process. What is the best approach? (Scenario 58)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "People"
+    },
+    {
+      "id": 59,
+      "question": "A key team member wants to leave the project. What should you do? (Scenario 59)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "People"
+    },
+    {
+      "id": 60,
+      "question": "Team morale is low after a failed sprint. How should you address this? (Scenario 60)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "People"
+    },
+    {
+      "id": 61,
+      "question": "A team member is underperforming on critical tasks. What should you do first? (Scenario 61)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "People"
+    },
+    {
+      "id": 62,
+      "question": "Two stakeholders have conflicting requirements. How should you resolve this? (Scenario 62)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "People"
+    },
+    {
+      "id": 63,
+      "question": "Your team is resistant to a new process. What is the best approach? (Scenario 63)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "People"
+    },
+    {
+      "id": 64,
+      "question": "A key team member wants to leave the project. What should you do? (Scenario 64)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "People"
+    },
+    {
+      "id": 65,
+      "question": "Team morale is low after a failed sprint. How should you address this? (Scenario 65)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "People"
+    },
+    {
+      "id": 66,
+      "question": "A team member is underperforming on critical tasks. What should you do first? (Scenario 66)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "People"
+    },
+    {
+      "id": 67,
+      "question": "Two stakeholders have conflicting requirements. How should you resolve this? (Scenario 67)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "People"
+    },
+    {
+      "id": 68,
+      "question": "Your team is resistant to a new process. What is the best approach? (Scenario 68)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "People"
+    },
+    {
+      "id": 69,
+      "question": "A key team member wants to leave the project. What should you do? (Scenario 69)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "People"
+    },
+    {
+      "id": 70,
+      "question": "Team morale is low after a failed sprint. How should you address this? (Scenario 70)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "People"
+    },
+    {
+      "id": 71,
+      "question": "A team member is underperforming on critical tasks. What should you do first? (Scenario 71)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "People"
+    },
+    {
+      "id": 72,
+      "question": "Two stakeholders have conflicting requirements. How should you resolve this? (Scenario 72)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "People"
+    },
+    {
+      "id": 73,
+      "question": "Your team is resistant to a new process. What is the best approach? (Scenario 73)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "People"
+    },
+    {
+      "id": 74,
+      "question": "A key team member wants to leave the project. What should you do? (Scenario 74)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "People"
+    },
+    {
+      "id": 75,
+      "question": "Team morale is low after a failed sprint. How should you address this? (Scenario 75)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "People"
+    },
+    {
+      "id": 76,
+      "question": "A team member is underperforming on critical tasks. What should you do first? (Scenario 76)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "People"
+    },
+    {
+      "id": 77,
+      "question": "You discover a major defect during quality inspection. What should you do? (Scenario 77)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 78,
+      "question": "The project schedule is showing signs of delay. What is your first action? (Scenario 78)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 79,
+      "question": "A change request has been submitted. What should you do first? (Scenario 79)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 80,
+      "question": "Risk analysis shows a new high-priority threat. What should you do? (Scenario 80)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 81,
+      "question": "Actual costs are exceeding planned costs. What should you do? (Scenario 81)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 82,
+      "question": "You discover a major defect during quality inspection. What should you do? (Scenario 82)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 83,
+      "question": "The project schedule is showing signs of delay. What is your first action? (Scenario 83)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 84,
+      "question": "A change request has been submitted. What should you do first? (Scenario 84)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 85,
+      "question": "Risk analysis shows a new high-priority threat. What should you do? (Scenario 85)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 86,
+      "question": "Actual costs are exceeding planned costs. What should you do? (Scenario 86)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 87,
+      "question": "You discover a major defect during quality inspection. What should you do? (Scenario 87)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 88,
+      "question": "The project schedule is showing signs of delay. What is your first action? (Scenario 88)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 89,
+      "question": "A change request has been submitted. What should you do first? (Scenario 89)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 90,
+      "question": "Risk analysis shows a new high-priority threat. What should you do? (Scenario 90)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 91,
+      "question": "Actual costs are exceeding planned costs. What should you do? (Scenario 91)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 92,
+      "question": "You discover a major defect during quality inspection. What should you do? (Scenario 92)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 93,
+      "question": "The project schedule is showing signs of delay. What is your first action? (Scenario 93)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 94,
+      "question": "A change request has been submitted. What should you do first? (Scenario 94)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 95,
+      "question": "Risk analysis shows a new high-priority threat. What should you do? (Scenario 95)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 96,
+      "question": "Actual costs are exceeding planned costs. What should you do? (Scenario 96)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 97,
+      "question": "You discover a major defect during quality inspection. What should you do? (Scenario 97)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 98,
+      "question": "The project schedule is showing signs of delay. What is your first action? (Scenario 98)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 99,
+      "question": "A change request has been submitted. What should you do first? (Scenario 99)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 100,
+      "question": "Risk analysis shows a new high-priority threat. What should you do? (Scenario 100)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 101,
+      "question": "Actual costs are exceeding planned costs. What should you do? (Scenario 101)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 102,
+      "question": "You discover a major defect during quality inspection. What should you do? (Scenario 102)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 103,
+      "question": "The project schedule is showing signs of delay. What is your first action? (Scenario 103)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 104,
+      "question": "A change request has been submitted. What should you do first? (Scenario 104)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 105,
+      "question": "Risk analysis shows a new high-priority threat. What should you do? (Scenario 105)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 106,
+      "question": "Actual costs are exceeding planned costs. What should you do? (Scenario 106)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 107,
+      "question": "You discover a major defect during quality inspection. What should you do? (Scenario 107)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 108,
+      "question": "The project schedule is showing signs of delay. What is your first action? (Scenario 108)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 109,
+      "question": "A change request has been submitted. What should you do first? (Scenario 109)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 110,
+      "question": "Risk analysis shows a new high-priority threat. What should you do? (Scenario 110)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 111,
+      "question": "Actual costs are exceeding planned costs. What should you do? (Scenario 111)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 112,
+      "question": "You discover a major defect during quality inspection. What should you do? (Scenario 112)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 113,
+      "question": "The project schedule is showing signs of delay. What is your first action? (Scenario 113)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 114,
+      "question": "A change request has been submitted. What should you do first? (Scenario 114)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 115,
+      "question": "Risk analysis shows a new high-priority threat. What should you do? (Scenario 115)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 116,
+      "question": "Actual costs are exceeding planned costs. What should you do? (Scenario 116)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 117,
+      "question": "You discover a major defect during quality inspection. What should you do? (Scenario 117)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 118,
+      "question": "The project schedule is showing signs of delay. What is your first action? (Scenario 118)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 119,
+      "question": "A change request has been submitted. What should you do first? (Scenario 119)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 120,
+      "question": "Risk analysis shows a new high-priority threat. What should you do? (Scenario 120)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 121,
+      "question": "Actual costs are exceeding planned costs. What should you do? (Scenario 121)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 122,
+      "question": "You discover a major defect during quality inspection. What should you do? (Scenario 122)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 123,
+      "question": "The project schedule is showing signs of delay. What is your first action? (Scenario 123)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 124,
+      "question": "A change request has been submitted. What should you do first? (Scenario 124)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 125,
+      "question": "Risk analysis shows a new high-priority threat. What should you do? (Scenario 125)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 126,
+      "question": "Actual costs are exceeding planned costs. What should you do? (Scenario 126)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 127,
+      "question": "You discover a major defect during quality inspection. What should you do? (Scenario 127)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 128,
+      "question": "The project schedule is showing signs of delay. What is your first action? (Scenario 128)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 129,
+      "question": "A change request has been submitted. What should you do first? (Scenario 129)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 130,
+      "question": "Risk analysis shows a new high-priority threat. What should you do? (Scenario 130)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 131,
+      "question": "Actual costs are exceeding planned costs. What should you do? (Scenario 131)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 132,
+      "question": "You discover a major defect during quality inspection. What should you do? (Scenario 132)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 133,
+      "question": "The project schedule is showing signs of delay. What is your first action? (Scenario 133)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 134,
+      "question": "A change request has been submitted. What should you do first? (Scenario 134)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 135,
+      "question": "Risk analysis shows a new high-priority threat. What should you do? (Scenario 135)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 136,
+      "question": "Actual costs are exceeding planned costs. What should you do? (Scenario 136)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 137,
+      "question": "You discover a major defect during quality inspection. What should you do? (Scenario 137)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 138,
+      "question": "The project schedule is showing signs of delay. What is your first action? (Scenario 138)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 139,
+      "question": "A change request has been submitted. What should you do first? (Scenario 139)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 140,
+      "question": "Risk analysis shows a new high-priority threat. What should you do? (Scenario 140)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 141,
+      "question": "Actual costs are exceeding planned costs. What should you do? (Scenario 141)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 142,
+      "question": "You discover a major defect during quality inspection. What should you do? (Scenario 142)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 143,
+      "question": "The project schedule is showing signs of delay. What is your first action? (Scenario 143)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 144,
+      "question": "A change request has been submitted. What should you do first? (Scenario 144)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 145,
+      "question": "Risk analysis shows a new high-priority threat. What should you do? (Scenario 145)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 146,
+      "question": "Actual costs are exceeding planned costs. What should you do? (Scenario 146)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 147,
+      "question": "You discover a major defect during quality inspection. What should you do? (Scenario 147)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 148,
+      "question": "The project schedule is showing signs of delay. What is your first action? (Scenario 148)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 149,
+      "question": "A change request has been submitted. What should you do first? (Scenario 149)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 150,
+      "question": "Risk analysis shows a new high-priority threat. What should you do? (Scenario 150)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 151,
+      "question": "Actual costs are exceeding planned costs. What should you do? (Scenario 151)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 152,
+      "question": "You discover a major defect during quality inspection. What should you do? (Scenario 152)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 153,
+      "question": "The project schedule is showing signs of delay. What is your first action? (Scenario 153)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 154,
+      "question": "A change request has been submitted. What should you do first? (Scenario 154)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 155,
+      "question": "Risk analysis shows a new high-priority threat. What should you do? (Scenario 155)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 156,
+      "question": "Actual costs are exceeding planned costs. What should you do? (Scenario 156)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 157,
+      "question": "You discover a major defect during quality inspection. What should you do? (Scenario 157)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 158,
+      "question": "The project schedule is showing signs of delay. What is your first action? (Scenario 158)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 159,
+      "question": "A change request has been submitted. What should you do first? (Scenario 159)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 160,
+      "question": "Risk analysis shows a new high-priority threat. What should you do? (Scenario 160)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 161,
+      "question": "Actual costs are exceeding planned costs. What should you do? (Scenario 161)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 162,
+      "question": "You discover a major defect during quality inspection. What should you do? (Scenario 162)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 163,
+      "question": "The project schedule is showing signs of delay. What is your first action? (Scenario 163)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Process"
+    },
+    {
+      "id": 164,
+      "question": "A change request has been submitted. What should you do first? (Scenario 164)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 2,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Process"
+    },
+    {
+      "id": 165,
+      "question": "Risk analysis shows a new high-priority threat. What should you do? (Scenario 165)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Process"
+    },
+    {
+      "id": 166,
+      "question": "Actual costs are exceeding planned costs. What should you do? (Scenario 166)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Process"
+    },
+    {
+      "id": 167,
+      "question": "Senior management wants to change project priorities mid-execution. How should you respond? (Scenario 167)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Business Environment"
+    },
+    {
+      "id": 168,
+      "question": "A regulatory change impacts your project scope. What should you do? (Scenario 168)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Business Environment"
+    },
+    {
+      "id": 169,
+      "question": "Market conditions have changed affecting project value. What is your response? (Scenario 169)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Business Environment"
+    },
+    {
+      "id": 170,
+      "question": "The organization is implementing a new governance framework. How do you adapt? (Scenario 170)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 3,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Business Environment"
+    },
+    {
+      "id": 171,
+      "question": "A competitor launches a similar product. How should this affect your project? (Scenario 171)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Business Environment"
+    },
+    {
+      "id": 172,
+      "question": "Senior management wants to change project priorities mid-execution. How should you respond? (Scenario 172)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Business Environment"
+    },
+    {
+      "id": 173,
+      "question": "A regulatory change impacts your project scope. What should you do? (Scenario 173)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Business Environment"
+    },
+    {
+      "id": 174,
+      "question": "Market conditions have changed affecting project value. What is your response? (Scenario 174)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 3,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Business Environment"
+    },
+    {
+      "id": 175,
+      "question": "The organization is implementing a new governance framework. How do you adapt? (Scenario 175)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Business Environment"
+    },
+    {
+      "id": 176,
+      "question": "A competitor launches a similar product. How should this affect your project? (Scenario 176)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Business Environment"
+    },
+    {
+      "id": 177,
+      "question": "Senior management wants to change project priorities mid-execution. How should you respond? (Scenario 177)",
+      "options": [
+        "Make a quick decision to avoid delays",
+        "Gather more information and analyze options",
+        "Defer the decision to the sponsor",
+        "Use the lessons learned register for guidance"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This solution best addresses the root cause while maintaining project objectives and stakeholder satisfaction through collaborative decision-making.",
+      "domain": "Business Environment"
+    },
+    {
+      "id": 178,
+      "question": "A regulatory change impacts your project scope. What should you do? (Scenario 178)",
+      "options": [
+        "Continue with the current plan",
+        "Request additional budget or resources",
+        "Implement a workaround solution",
+        "Perform impact analysis and present options to stakeholders"
+      ],
+      "correctAnswer": 3,
+      "explanation": "According to PMP standards, this response properly balances analysis, communication, and appropriate escalation while respecting team dynamics.",
+      "domain": "Business Environment"
+    },
+    {
+      "id": 179,
+      "question": "Market conditions have changed affecting project value. What is your response? (Scenario 179)",
+      "options": [
+        "Escalate to the project sponsor immediately",
+        "Document the issue and continue as planned",
+        "Analyze the situation and determine root cause before taking action",
+        "Implement corrective action without delay"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This approach follows PMI best practices by ensuring proper analysis before action. It demonstrates professional responsibility and stakeholder engagement.",
+      "domain": "Business Environment"
+    },
+    {
+      "id": 180,
+      "question": "The organization is implementing a new governance framework. How do you adapt? (Scenario 180)",
+      "options": [
+        "Update the risk register and monitor closely",
+        "Conduct a team meeting to discuss the situation",
+        "Follow the defined process in the project management plan",
+        "Consult with subject matter experts for guidance"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
+      "domain": "Business Environment"
+    }
+  ]
+}
