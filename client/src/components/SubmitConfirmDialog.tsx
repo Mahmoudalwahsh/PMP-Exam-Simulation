@@ -1,5 +1,6 @@
 import { AlertTriangle, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface SubmitConfirmDialogProps {
   isOpen: boolean;
@@ -16,6 +17,8 @@ export function SubmitConfirmDialog({
   answeredCount,
   totalQuestions,
 }: SubmitConfirmDialogProps) {
+  const { t } = useLanguage();
+  
   if (!isOpen) return null;
 
   const unansweredCount = totalQuestions - answeredCount;
@@ -27,7 +30,7 @@ export function SubmitConfirmDialog({
     >
       <div className="bg-card rounded-lg shadow-2xl max-w-md w-full">
         <div className="flex items-center justify-between p-6 border-b border-card-border">
-          <h2 className="text-2xl font-semibold">Submit Exam</h2>
+          <h2 className="text-2xl font-semibold">{t('submit.confirm')}</h2>
           <Button
             variant="ghost"
             size="icon"
@@ -45,15 +48,15 @@ export function SubmitConfirmDialog({
             </div>
             <div className="space-y-2">
               <p className="text-base leading-relaxed">
-                Are you sure you want to submit your exam?
+                {t('submit.warning')}
               </p>
               {unansweredCount > 0 && (
                 <p className="text-sm text-muted-foreground">
-                  You have <span className="font-semibold text-warning">{unansweredCount}</span> unanswered question{unansweredCount !== 1 ? 's' : ''}.
+                  <span className="font-semibold text-warning">{unansweredCount}</span> {t('submit.unanswered')}
                 </p>
               )}
               <p className="text-sm text-muted-foreground">
-                This action cannot be undone.
+                {t('submit.noReturn')}
               </p>
             </div>
           </div>
@@ -66,7 +69,7 @@ export function SubmitConfirmDialog({
             className="flex-1"
             data-testid="button-cancel-submit"
           >
-            Cancel
+            {t('button.cancel')}
           </Button>
           <Button
             variant="destructive"
@@ -74,7 +77,7 @@ export function SubmitConfirmDialog({
             className="flex-1"
             data-testid="button-confirm-submit"
           >
-            Submit Exam
+            {t('button.confirmSubmit')}
           </Button>
         </div>
       </div>

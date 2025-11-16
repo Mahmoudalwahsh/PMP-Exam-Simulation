@@ -13,6 +13,8 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { LanguageToggle } from "@/components/LanguageToggle";
 
 interface ResultsState {
   examId: string;
@@ -23,6 +25,25 @@ interface ResultsState {
 
 export default function ResultsPage() {
   const [location, setLocation] = useLocation();
+  const { language, t } = useLanguage();
+
+  // Helper to extract text from bilingual objects or return string as-is
+  const getText = (value: any): string => {
+    if (typeof value === 'string') return value;
+    if (value && typeof value === 'object' && (value.en || value.ar)) {
+      return value[language] || value.en || '';
+    }
+    return String(value || '');
+  };
+
+  const getDomainTranslation = (domain: any): string => {
+    const domainText = getText(domain);
+    const domainKey = domainText.toLowerCase();
+    if (domainKey.includes('people')) return t('domain.people');
+    if (domainKey.includes('process')) return t('domain.process');
+    if (domainKey.includes('business')) return t('domain.business');
+    return domainText;
+  };
   
   const resultsData = useMemo(() => {
     const stored = sessionStorage.getItem('examResults');
@@ -83,6 +104,7 @@ export default function ResultsPage() {
     if (!resultsData) return null;
 
     const { examTitle, answers, questions } = resultsData;
+    const examTitleText = getText(examTitle);
     
     let correctCount = 0;
     const domainStats = new Map<string, { correct: number; total: number }>();
@@ -106,7 +128,7 @@ export default function ResultsPage() {
       
       if (isCorrect) correctCount++;
 
-      const domain = question.domain;
+      const domain = getText(question.domain);
       const stats = domainStats.get(domain) || { correct: 0, total: 0 };
       stats.total++;
       if (isCorrect) stats.correct++;
@@ -117,25 +139,25 @@ export default function ResultsPage() {
         questionResults.push({
           type: "single" as const,
           questionId: question.id,
-          question: question.question,
-          options: question.options,
+          question: getText(question.question),
+          options: question.options.map(opt => getText(opt)),
           userAnswer: userAnswer.selectedAnswer,
           correctAnswer: question.correctAnswer,
           isCorrect,
-          explanation: question.explanation,
-          domain: question.domain,
+          explanation: getText(question.explanation),
+          domain: getText(question.domain),
         });
       } else if (question.type === "multiple" && userAnswer.type === "multiple") {
         questionResults.push({
           type: "multiple" as const,
           questionId: question.id,
-          question: question.question,
-          options: question.options,
+          question: getText(question.question),
+          options: question.options.map(opt => getText(opt)),
           userAnswers: userAnswer.selectedAnswers,
           correctAnswers: question.correctAnswers,
           isCorrect,
-          explanation: question.explanation,
-          domain: question.domain,
+          explanation: getText(question.explanation),
+          domain: getText(question.domain),
         });
       }
     });
@@ -153,7 +175,7 @@ export default function ResultsPage() {
     const passed = percentage >= 61;
 
     return {
-      examTitle,
+      examTitle: examTitleText,
       totalQuestions: questions.length,
       correctAnswers: correctCount,
       percentage,
@@ -161,7 +183,7 @@ export default function ResultsPage() {
       domainResults,
       questionResults,
     };
-  }, [resultsData]);
+  }, [resultsData, language, getText]);
 
   if (!results) {
     return (
@@ -170,14 +192,14 @@ export default function ResultsPage() {
           <div className="text-center space-y-4">
             <AlertTriangle className="h-10 sm:h-12 w-10 sm:w-12 mx-auto text-warning" />
             <div className="space-y-2">
-              <h2 className="text-lg sm:text-xl font-semibold">No Results Found</h2>
+              <h2 className="text-lg sm:text-xl font-semibold">{t('error.noResults')}</h2>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Please complete an exam to view results.
+                {t('error.completeExam')}
               </p>
             </div>
             <Button onClick={() => setLocation("/")} data-testid="button-back-home" className="w-full sm:w-auto">
               <ArrowLeft className="h-4 w-4 mr-2" />
-              Back to Home
+              {t('button.backHome')}
             </Button>
           </div>
         </Card>
@@ -188,15 +210,16 @@ export default function ResultsPage() {
   return (
     <div className="min-h-screen bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8 md:py-12">
-        <div className="mb-6 sm:mb-8">
+        <div className="mb-6 sm:mb-8 flex items-center justify-between gap-4" dir="ltr">
           <Button
             variant="outline"
             onClick={() => setLocation("/")}
             data-testid="button-back"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Back to Exams
+            {t('button.backHome')}
           </Button>
+          <LanguageToggle />
         </div>
 
         <div className="space-y-6 sm:space-y-8">
@@ -220,10 +243,10 @@ export default function ResultsPage() {
                   <p className={`text-lg sm:text-xl font-semibold ${
                     results.passed ? "text-success" : "text-destructive"
                   }`} data-testid="text-status">
-                    {results.passed ? "PASSED" : "FAILED"}
+                    {results.passed ? t('results.passed') : t('results.failed')}
                   </p>
                   <p className="text-sm sm:text-base text-muted-foreground px-4 sm:px-0" data-testid="text-correct-count">
-                    {results.correctAnswers} out of {results.totalQuestions} questions correct
+                    {results.correctAnswers} {t('results.outOf')} {results.totalQuestions} {t('results.questionsCorrect')}
                   </p>
                 </div>
               </div>
@@ -231,17 +254,17 @@ export default function ResultsPage() {
           </Card>
 
           <div>
-            <h2 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">Performance by Domain</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">{t('results.performance')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {results.domainResults.map((domain) => (
                 <Card key={domain.domain} data-testid={`card-domain-${domain.domain}`}>
                   <CardHeader>
-                    <CardTitle className="text-lg">{domain.domain}</CardTitle>
+                    <CardTitle className="text-lg">{getDomainTranslation(domain.domain)}</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div className="space-y-2">
                       <div className="flex justify-between text-sm">
-                        <span className="text-muted-foreground">Score</span>
+                        <span className="text-muted-foreground">{t('results.score')}</span>
                         <span className="font-semibold" data-testid={`text-domain-score-${domain.domain}`}>
                           {domain.correct} / {domain.total}
                         </span>
@@ -269,17 +292,17 @@ export default function ResultsPage() {
           </div>
 
           <div>
-            <h2 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">Detailed Answer Review</h2>
+            <h2 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">{t('results.review')}</h2>
             <Card>
               <div className="overflow-x-auto">
                 <Table>
                   <TableHeader>
                     <TableRow>
                       <TableHead className="w-12 sm:w-16">Q#</TableHead>
-                      <TableHead className="min-w-[200px] sm:min-w-[300px]">Question</TableHead>
-                      <TableHead className="w-24 sm:w-32">Your Answer</TableHead>
-                      <TableHead className="w-24 sm:w-32">Correct Answer</TableHead>
-                      <TableHead className="w-16 sm:w-24">Result</TableHead>
+                      <TableHead className="min-w-[200px] sm:min-w-[300px]">{t('results.question')}</TableHead>
+                      <TableHead className="w-24 sm:w-32">{t('results.yourAnswer')}</TableHead>
+                      <TableHead className="w-24 sm:w-32">{t('results.correctAnswer')}</TableHead>
+                      <TableHead className="w-16 sm:w-24">{t('results.status')}</TableHead>
                     </TableRow>
                   </TableHeader>
                 <TableBody>
@@ -292,7 +315,7 @@ export default function ResultsPage() {
                         <div className="space-y-3">
                           <p className="text-sm leading-relaxed">{result.question}</p>
                           {result.type === "multiple" && (
-                            <Badge variant="outline" className="text-xs">Multiple Answer</Badge>
+                            <Badge variant="outline" className="text-xs">{t('exam.multipleAnswer')}</Badge>
                           )}
                           <div className="space-y-1.5 text-xs">
                             {result.options.map((option, optIndex) => {
@@ -325,7 +348,7 @@ export default function ResultsPage() {
                           </div>
                           <div className="pt-2 border-t border-border">
                             <p className="text-xs text-muted-foreground font-medium mb-1">
-                              Explanation:
+                              {t('results.explanation')}:
                             </p>
                             <p className="text-xs text-muted-foreground leading-relaxed">
                               {result.explanation}
@@ -340,7 +363,7 @@ export default function ResultsPage() {
                               {String.fromCharCode(65 + result.userAnswer)}
                             </Badge>
                           ) : (
-                            <Badge variant="secondary">Not Answered</Badge>
+                            <Badge variant="secondary">{t('results.notAnswered')}</Badge>
                           )
                         ) : (
                           result.userAnswers.length > 0 ? (
@@ -352,7 +375,7 @@ export default function ResultsPage() {
                               ))}
                             </div>
                           ) : (
-                            <Badge variant="secondary">Not Answered</Badge>
+                            <Badge variant="secondary">{t('results.notAnswered')}</Badge>
                           )
                         )}
                       </TableCell>

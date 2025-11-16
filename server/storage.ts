@@ -1,10 +1,24 @@
 import { promises as fs } from "fs";
 import path from "path";
-import type { Exam, ExamListItem } from "@shared/schema";
+import type { Exam, ExamListItem, BilingualText } from "@shared/schema";
 
 export interface IStorage {
   getAllExams(): Promise<ExamListItem[]>;
   getExam(id: string): Promise<Exam | null>;
+}
+
+// Helper function to convert old string format to bilingual format
+function toBilingualText(value: string | BilingualText): BilingualText {
+  if (typeof value === 'string') {
+    // Old format: fallback to English text for both languages
+    // This allows legacy exams to work in both language modes
+    // Properly translated exams will have native Arabic content
+    return {
+      en: value,
+      ar: value // Fallback: use English text for Arabic mode too
+    };
+  }
+  return value;
 }
 
 export class FileStorage implements IStorage {
@@ -37,12 +51,12 @@ export class FileStorage implements IStorage {
         try {
           const filePath = path.join(this.examsDirectory, file);
           const content = await fs.readFile(filePath, 'utf-8');
-          const examData: Exam = JSON.parse(content);
+          const examData: any = JSON.parse(content);
 
           exams.push({
             id: examData.id,
-            title: examData.title,
-            description: examData.description,
+            title: toBilingualText(examData.title),
+            description: toBilingualText(examData.description),
             questionCount: examData.questions.length,
             duration: examData.duration,
           });
@@ -69,19 +83,28 @@ export class FileStorage implements IStorage {
           const examData: any = JSON.parse(content);
 
           if (examData.id === id) {
-            // Normalize questions to ensure they have type field (backward compatibility)
+            // Convert title and description to bilingual format
+            examData.title = toBilingualText(examData.title);
+            examData.description = toBilingualText(examData.description);
+            
+            // Normalize questions to ensure they have type field and bilingual content
             examData.questions = examData.questions.map((q: any) => {
-              // If question already has type, return as-is
-              if (q.type) {
-                return q;
+              const question: any = { ...q };
+              
+              // Add type if missing (backward compatibility)
+              if (!question.type) {
+                question.type = q.correctAnswers !== undefined ? "multiple" : "single";
               }
               
-              // Legacy format: add type based on presence of correctAnswer vs correctAnswers
-              if (q.correctAnswers !== undefined) {
-                return { ...q, type: "multiple" };
-              } else {
-                return { ...q, type: "single" };
-              }
+              // Convert text fields to bilingual format
+              question.question = toBilingualText(q.question);
+              question.explanation = toBilingualText(q.explanation);
+              question.domain = toBilingualText(q.domain);
+              
+              // Convert options array to bilingual format
+              question.options = q.options.map((opt: any) => toBilingualText(opt));
+              
+              return question;
             });
             
             return examData as Exam;

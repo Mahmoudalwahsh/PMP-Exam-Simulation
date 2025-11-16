@@ -1,5 +1,6 @@
 import { X, CheckCircle, Circle, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 import type { Question, UserAnswer } from "@shared/schema";
 
 interface QuestionNavigatorProps {
@@ -19,6 +20,8 @@ export function QuestionNavigator({
   currentIndex,
   onSelectQuestion,
 }: QuestionNavigatorProps) {
+  const { t } = useLanguage();
+  
   if (!isOpen) return null;
 
   const handleSelectQuestion = (index: number) => {
@@ -33,7 +36,7 @@ export function QuestionNavigator({
     >
       <div className="bg-card rounded-lg shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden flex flex-col">
         <div className="flex items-center justify-between p-4 sm:p-6 border-b border-card-border">
-          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold">Question Navigator</h2>
+          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold">{t('nav.questionNavigator')}</h2>
           <Button
             variant="ghost"
             size="icon"
@@ -49,19 +52,19 @@ export function QuestionNavigator({
             <div className="grid grid-cols-2 sm:flex sm:items-center gap-3 sm:gap-6 text-xs sm:text-sm">
               <div className="flex items-center gap-2">
                 <div className="w-4 h-4 rounded bg-primary"></div>
-                <span className="text-muted-foreground">Current</span>
+                <span className="text-muted-foreground">{t('exam.question')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-success" />
-                <span className="text-muted-foreground">Answered</span>
+                <span className="text-muted-foreground">{t('nav.answered')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Circle className="w-4 h-4 text-muted-foreground" />
-                <span className="text-muted-foreground">Not Answered</span>
+                <span className="text-muted-foreground">{t('nav.notAnswered')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <AlertTriangle className="w-4 h-4 text-warning" />
-                <span className="text-muted-foreground">Marked</span>
+                <span className="text-muted-foreground">{t('nav.marked')}</span>
               </div>
             </div>
 
@@ -110,7 +113,7 @@ export function QuestionNavigator({
 
         <div className="p-4 sm:p-6 border-t border-card-border">
           <Button onClick={onClose} className="w-full" data-testid="button-close-navigator-bottom">
-            Close Navigator
+            {t('button.close')}
           </Button>
         </div>
       </div>

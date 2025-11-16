@@ -1,0 +1,88 @@
+1. Add Full Arabic Language Support
+
+Implement a language toggle switch (English ⇆ Arabic) in the UI.
+
+When switched:
+
+All interface text, labels, buttons, messages, and navigation must switch to Arabic.
+
+Exam questions and answers must also switch to Arabic versions.
+
+2. Update Exam JSON Template Structure
+
+Modify the exam .json files to support bilingual content.
+Each question object should be updated to include both English and Arabic versions.
+
+New JSON Structure Example
+{
+  "examTitle": {
+    "en": "PMP Mock Exam 1",
+    "ar": "امتحان محاكاة PMP 1"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "en": "What is the primary purpose of the project charter?",
+        "ar": "ما هو الهدف الأساسي من ميثاق المشروع؟"
+      },
+      "answers": [
+        {
+          "en": "Authorize the project and appoint the project manager",
+          "ar": "تفويض المشروع وتعيين مدير المشروع"
+        },
+        {
+          "en": "Define the WBS",
+          "ar": "تحديد هيكل تقسيم العمل"
+        },
+        {
+          "en": "Create the project schedule",
+          "ar": "إنشاء الجدول الزمني للمشروع"
+        }
+      ],
+      "correctAnswerIndex": 0
+    }
+  ]
+}
+
+3. App Behavior Requirements
+
+When the user selects Arabic:
+
+Load the Arabic fields (ar) from the JSON.
+
+When the user selects English:
+
+Load the English fields (en).
+
+Ensure the app supports RTL (right-to-left) layout when Arabic is active.
+
+Maintain exam timing, scoring, navigation, and all original functionality unchanged.
+
+4. Technical Requirements
+
+Ensure components re-render dynamically when language changes.
+
+Store language selection in global state (React context, Redux, or equivalent).
+
+Ensure JSON loading is flexible so future mock exams that follow this schema are automatically compatible.
+
+5. Deliverables
+
+Updated project code with:
+
+Language toggle UI component
+
+Internationalization logic
+
+RTL support
+
+Updated JSON loader/parser
+
+Updated documentation explaining:
+
+How to add new bilingual exam JSON files
+
+How to add or edit translations
+
+How to extend translations to additional UI elements

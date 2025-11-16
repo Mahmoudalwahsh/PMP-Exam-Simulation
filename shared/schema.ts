@@ -1,27 +1,33 @@
 import { z } from "zod";
 
+// Bilingual text schema for supporting English and Arabic
+export const bilingualTextSchema = z.object({
+  en: z.string(),
+  ar: z.string(),
+});
+
 // Single answer question schema
 export const singleAnswerQuestionSchema = z.object({
   id: z.number(),
   type: z.literal("single").default("single"),
-  question: z.string(),
-  options: z.array(z.string()).length(4),
+  question: bilingualTextSchema,
+  options: z.array(bilingualTextSchema).length(4),
   correctAnswer: z.number().min(0).max(3),
-  explanation: z.string(),
-  domain: z.string(),
+  explanation: bilingualTextSchema,
+  domain: bilingualTextSchema,
 });
 
 // Multiple answer question schema
 export const multipleAnswerQuestionSchema = z.object({
   id: z.number(),
   type: z.literal("multiple"),
-  question: z.string(),
-  options: z.array(z.string()).length(4),
+  question: bilingualTextSchema,
+  options: z.array(bilingualTextSchema).length(4),
   correctAnswers: z.array(z.number().min(0).max(3)).min(2),
   minSelections: z.number().min(2).optional(),
   maxSelections: z.number().min(2).max(4).optional(),
-  explanation: z.string(),
-  domain: z.string(),
+  explanation: bilingualTextSchema,
+  domain: bilingualTextSchema,
 });
 
 // Question schema (discriminated union)
@@ -33,8 +39,8 @@ export const questionSchema = z.discriminatedUnion("type", [
 // Exam schema
 export const examSchema = z.object({
   id: z.string(),
-  title: z.string(),
-  description: z.string(),
+  title: bilingualTextSchema,
+  description: bilingualTextSchema,
   duration: z.number(), // in minutes
   questions: z.array(questionSchema),
 });
@@ -121,6 +127,7 @@ export const examResultSchema = z.object({
 });
 
 // Type exports
+export type BilingualText = z.infer<typeof bilingualTextSchema>;
 export type SingleAnswerQuestion = z.infer<typeof singleAnswerQuestionSchema>;
 export type MultipleAnswerQuestion = z.infer<typeof multipleAnswerQuestionSchema>;
 export type Question = z.infer<typeof questionSchema>;
@@ -138,8 +145,8 @@ export type ExamResult = z.infer<typeof examResultSchema>;
 // API response types
 export type ExamListItem = {
   id: string;
-  title: string;
-  description: string;
+  title: BilingualText;
+  description: BilingualText;
   questionCount: number;
   duration: number;
 };

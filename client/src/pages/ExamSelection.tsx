@@ -6,11 +6,14 @@ import { Clock, FileText, Loader2 } from "lucide-react";
 import { useLocation } from "wouter";
 import { useState } from "react";
 import type { ExamListItem } from "@shared/schema";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { LanguageToggle } from "@/components/LanguageToggle";
 import patronsLogo from "@assets/Patrons_Logo_Website_3AOIUWA_1762765779728.png";
 
 export default function ExamSelection() {
   const [, setLocation] = useLocation();
   const [selectedExamId, setSelectedExamId] = useState<string>("");
+  const { language, t } = useLanguage();
   
   const { data: exams, isLoading } = useQuery<ExamListItem[]>({
     queryKey: ["/api/exams"],
@@ -28,20 +31,21 @@ export default function ExamSelection() {
     <div className="min-h-screen bg-background flex items-center justify-center">
       <div className="max-w-2xl w-full mx-auto px-4 sm:px-6 py-6 sm:py-12">
         <div className="mb-6 sm:mb-12 text-center space-y-4 sm:space-y-6">
-          <div className="flex justify-center">
+          <div className="flex justify-center items-center gap-4" dir="ltr">
             <img 
               src={patronsLogo} 
               alt="Patrons Consulting" 
-              className="h-12 sm:h-16 w-auto"
+              className="h-16 sm:h-20 md:h-24 w-auto"
               data-testid="img-patrons-logo"
             />
+            <LanguageToggle />
           </div>
           <div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-foreground">
-              PMP Exam Simulator
+              {t('app.title')}
             </h1>
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed px-2 sm:px-0">
-              Practice for your Project Management Professional certification with realistic exam simulations
+              {t('app.subtitle')}
             </p>
           </div>
         </div>
@@ -55,7 +59,7 @@ export default function ExamSelection() {
             <div className="space-y-4 sm:space-y-6">
               <div className="space-y-2 sm:space-y-3">
                 <label className="text-sm font-medium text-foreground">
-                  Select an Exam
+                  {t('select.title')}
                 </label>
                 <Select 
                   value={selectedExamId} 
@@ -65,7 +69,7 @@ export default function ExamSelection() {
                     className="w-full" 
                     data-testid="select-exam"
                   >
-                    <SelectValue placeholder="Choose an exam to begin..." />
+                    <SelectValue placeholder={t('select.choose')} />
                   </SelectTrigger>
                   <SelectContent>
                     {exams.map((exam) => (
@@ -75,15 +79,15 @@ export default function ExamSelection() {
                         data-testid={`select-option-${exam.id}`}
                       >
                         <div className="flex items-center gap-4">
-                          <span className="font-medium">{exam.title}</span>
+                          <span className="font-medium">{exam.title[language]}</span>
                           <div className="flex items-center gap-3 text-xs text-muted-foreground">
                             <div className="flex items-center gap-1">
                               <FileText className="h-3 w-3" />
-                              <span>{exam.questionCount} Questions</span>
+                              <span>{exam.questionCount} {t('exam.questions')}</span>
                             </div>
                             <div className="flex items-center gap-1">
                               <Clock className="h-3 w-3" />
-                              <span>{exam.duration} Min</span>
+                              <span>{exam.duration} {t('exam.minutes')}</span>
                             </div>
                           </div>
                         </div>
@@ -97,22 +101,22 @@ export default function ExamSelection() {
                 <div className="bg-muted/50 border border-border rounded-md p-4 sm:p-6">
                   <div className="space-y-2 sm:space-y-3">
                     <h3 className="font-semibold text-base sm:text-lg text-foreground">
-                      {selectedExam.title}
+                      {selectedExam.title[language]}
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      {selectedExam.description}
+                      {selectedExam.description[language]}
                     </p>
                     <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-sm text-foreground pt-2">
                       <div className="flex items-center gap-2">
                         <FileText className="h-4 w-4 text-primary" />
                         <span data-testid="text-selected-question-count">
-                          {selectedExam.questionCount} Questions
+                          {selectedExam.questionCount} {t('exam.questions')}
                         </span>
                       </div>
                       <div className="flex items-center gap-2">
                         <Clock className="h-4 w-4 text-primary" />
                         <span data-testid="text-selected-duration">
-                          {selectedExam.duration} Minutes
+                          {selectedExam.duration} {t('exam.minutes')}
                         </span>
                       </div>
                     </div>
@@ -127,7 +131,7 @@ export default function ExamSelection() {
                 size="lg"
                 data-testid="button-start-exam"
               >
-                Start Exam
+                {t('button.start')}
               </Button>
             </div>
           </Card>
@@ -136,9 +140,9 @@ export default function ExamSelection() {
             <div className="text-center space-y-4">
               <FileText className="h-10 sm:h-12 w-10 sm:w-12 mx-auto text-muted-foreground" />
               <div className="space-y-2">
-                <h3 className="text-lg sm:text-xl font-semibold">No Exams Available</h3>
+                <h3 className="text-lg sm:text-xl font-semibold">{t('error.load')}</h3>
                 <p className="text-sm sm:text-base text-muted-foreground px-2 sm:px-0">
-                  No exam files were found. Please add exam JSON files to the exams folder.
+                  {t('error.load')}
                 </p>
               </div>
             </div>

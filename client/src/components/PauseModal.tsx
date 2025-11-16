@@ -1,5 +1,6 @@
 import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface PauseModalProps {
   isOpen: boolean;
@@ -7,6 +8,8 @@ interface PauseModalProps {
 }
 
 export function PauseModal({ isOpen, onResume }: PauseModalProps) {
+  const { t } = useLanguage();
+  
   if (!isOpen) return null;
 
   return (
@@ -19,9 +22,9 @@ export function PauseModal({ isOpen, onResume }: PauseModalProps) {
           <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
             <Play className="h-8 w-8 sm:h-10 sm:w-10 text-primary" />
           </div>
-          <h2 className="text-2xl sm:text-3xl font-bold">Exam Paused</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold">{t('exam.paused')}</h2>
           <p className="text-muted-foreground text-sm sm:text-base md:text-lg px-2 sm:px-0">
-            The timer has been paused. Click resume when you're ready to continue.
+            {t('exam.resume')}
           </p>
         </div>
         <Button
@@ -31,7 +34,7 @@ export function PauseModal({ isOpen, onResume }: PauseModalProps) {
           data-testid="button-resume"
         >
           <Play className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
-          Resume Exam
+          {t('button.resume')}
         </Button>
       </div>
     </div>

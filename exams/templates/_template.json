@@ -1,66 +1,156 @@
 {
   "id": "your-exam-id-here",
-  "title": "Your Exam Title Here",
-  "description": "Brief description of your exam (shown on exam selection page)",
+  "title": {
+    "en": "Your Exam Title Here",
+    "ar": "عنوان الامتحان هنا"
+  },
+  "description": {
+    "en": "Brief description of your exam (shown on exam selection page)",
+    "ar": "وصف موجز للامتحان (يظهر في صفحة اختيار الامتحان)"
+  },
   "duration": 230,
   "questions": [
     {
       "id": 1,
       "type": "single",
-      "question": "Example single-answer question: What is the primary purpose of a project charter?",
+      "question": {
+        "en": "Example single-answer question: What is the primary purpose of a project charter?",
+        "ar": "سؤال مثال بإجابة واحدة: ما هو الهدف الأساسي من ميثاق المشروع؟"
+      },
       "options": [
-        "To document the project budget",
-        "To formally authorize the project and provide the project manager with authority",
-        "To list all project stakeholders",
-        "To define the project schedule"
+        {
+          "en": "To document the project budget",
+          "ar": "لتوثيق ميزانية المشروع"
+        },
+        {
+          "en": "To formally authorize the project and provide the project manager with authority",
+          "ar": "للترخيص الرسمي للمشروع وتزويد مدير المشروع بالصلاحيات"
+        },
+        {
+          "en": "To list all project stakeholders",
+          "ar": "لسرد جميع أصحاب المصلحة في المشروع"
+        },
+        {
+          "en": "To define the project schedule",
+          "ar": "لتحديد الجدول الزمني للمشروع"
+        }
       ],
       "correctAnswer": 1,
-      "explanation": "The project charter formally authorizes the project and provides the project manager with the authority to apply organizational resources to project activities. While it may contain budget information and stakeholder lists, its primary purpose is authorization.",
-      "domain": "Process"
+      "explanation": {
+        "en": "The project charter formally authorizes the project and provides the project manager with the authority to apply organizational resources to project activities. While it may contain budget information and stakeholder lists, its primary purpose is authorization.",
+        "ar": "يقوم ميثاق المشروع بالترخيص الرسمي للمشروع ويزود مدير المشروع بالصلاحيات لتطبيق موارد المنظمة على أنشطة المشروع. بينما قد يحتوي على معلومات الميزانية وقوائم أصحاب المصلحة، فإن الغرض الأساسي منه هو الترخيص."
+      },
+      "domain": {
+        "en": "Process",
+        "ar": "العمليات"
+      }
     },
     {
       "id": 2,
       "type": "multiple",
-      "question": "Example multiple-answer question: Which of the following are benefits of using an iterative development approach? (Select all that apply)",
+      "question": {
+        "en": "Example multiple-answer question: Which of the following are benefits of using an iterative development approach? (Select all that apply)",
+        "ar": "سؤال مثال بإجابات متعددة: أي من الفوائد التالية لاستخدام نهج التطوير التكراري؟ (اختر كل ما ينطبق)"
+      },
       "options": [
-        "Faster feedback from stakeholders",
-        "Reduced need for testing",
-        "Ability to adapt to changing requirements",
-        "Lower overall project costs in all cases"
+        {
+          "en": "Faster feedback from stakeholders",
+          "ar": "ملاحظات أسرع من أصحاب المصلحة"
+        },
+        {
+          "en": "Reduced need for testing",
+          "ar": "تقليل الحاجة للاختبار"
+        },
+        {
+          "en": "Ability to adapt to changing requirements",
+          "ar": "القدرة على التكيف مع المتطلبات المتغيرة"
+        },
+        {
+          "en": "Lower overall project costs in all cases",
+          "ar": "تكاليف أقل للمشروع في جميع الحالات"
+        }
       ],
       "correctAnswers": [0, 2],
       "minSelections": 2,
       "maxSelections": 4,
-      "explanation": "Iterative development provides faster feedback from stakeholders and enables the team to adapt to changing requirements. However, it does not reduce the need for testing (testing is still crucial in each iteration), and it doesn't guarantee lower costs in all cases.",
-      "domain": "Process"
+      "explanation": {
+        "en": "Iterative development provides faster feedback from stakeholders and enables the team to adapt to changing requirements. However, it does not reduce the need for testing (testing is still crucial in each iteration), and it doesn't guarantee lower costs in all cases.",
+        "ar": "يوفر التطوير التكراري ملاحظات أسرع من أصحاب المصلحة ويمكّن الفريق من التكيف مع المتطلبات المتغيرة. ومع ذلك، فإنه لا يقلل من الحاجة للاختبار (الاختبار لا يزال حاسماً في كل تكرار)، ولا يضمن تكاليف أقل في جميع الحالات."
+      },
+      "domain": {
+        "en": "Process",
+        "ar": "العمليات"
+      }
     },
     {
       "id": 3,
       "type": "single",
-      "question": "What is the difference between a risk and an issue?",
+      "question": {
+        "en": "What is the difference between a risk and an issue?",
+        "ar": "ما هو الفرق بين المخاطر والمشكلات؟"
+      },
       "options": [
-        "There is no difference, they are the same thing",
-        "A risk is an uncertain event that may occur in the future; an issue is a problem that currently exists",
-        "An issue is more severe than a risk",
-        "Risks are documented in the issue log"
+        {
+          "en": "There is no difference, they are the same thing",
+          "ar": "لا يوجد فرق، هما نفس الشيء"
+        },
+        {
+          "en": "A risk is an uncertain event that may occur in the future; an issue is a problem that currently exists",
+          "ar": "المخاطر هي حدث غير مؤكد قد يحدث في المستقبل؛ المشكلة هي مشكلة موجودة حالياً"
+        },
+        {
+          "en": "An issue is more severe than a risk",
+          "ar": "المشكلة أكثر خطورة من المخاطر"
+        },
+        {
+          "en": "Risks are documented in the issue log",
+          "ar": "يتم توثيق المخاطر في سجل المشكلات"
+        }
       ],
       "correctAnswer": 1,
-      "explanation": "A risk is an uncertain event or condition that, if it occurs, has a positive or negative effect on project objectives. An issue is a current condition or problem that is already affecting the project and requires immediate attention.",
-      "domain": "Process"
+      "explanation": {
+        "en": "A risk is an uncertain event or condition that, if it occurs, has a positive or negative effect on project objectives. An issue is a current condition or problem that is already affecting the project and requires immediate attention.",
+        "ar": "المخاطر هي حدث أو شرط غير مؤكد إذا حدث، له تأثير إيجابي أو سلبي على أهداف المشروع. المشكلة هي شرط أو مشكلة حالية تؤثر بالفعل على المشروع وتتطلب اهتماماً فورياً."
+      },
+      "domain": {
+        "en": "Process",
+        "ar": "العمليات"
+      }
     },
     {
       "id": 4,
       "type": "multiple",
-      "question": "Which of the following are characteristics of servant leadership? (Select all that apply)",
+      "question": {
+        "en": "Which of the following are characteristics of servant leadership? (Select all that apply)",
+        "ar": "أي من الخصائص التالية للقيادة الخادمة؟ (اختر كل ما ينطبق)"
+      },
       "options": [
-        "Focuses on the growth and well-being of team members",
-        "Makes all decisions independently",
-        "Removes impediments for the team",
-        "Emphasizes command and control"
+        {
+          "en": "Focuses on the growth and well-being of team members",
+          "ar": "يركز على نمو ورفاهية أعضاء الفريق"
+        },
+        {
+          "en": "Makes all decisions independently",
+          "ar": "يتخذ جميع القرارات بشكل مستقل"
+        },
+        {
+          "en": "Removes impediments for the team",
+          "ar": "يزيل العقبات عن الفريق"
+        },
+        {
+          "en": "Emphasizes command and control",
+          "ar": "يؤكد على الأمر والسيطرة"
+        }
       ],
       "correctAnswers": [0, 2],
-      "explanation": "Servant leadership focuses on the growth and well-being of team members and communities. Servant leaders help remove impediments and barriers for the team. They do not make decisions independently or use command-and-control approaches.",
-      "domain": "People"
+      "explanation": {
+        "en": "Servant leadership focuses on the growth and well-being of team members and communities. Servant leaders help remove impediments and barriers for the team. They do not make decisions independently or use command-and-control approaches.",
+        "ar": "تركز القيادة الخادمة على نمو ورفاهية أعضاء الفريق والمجتمعات. يساعد القادة الخادمون في إزالة العقبات والحواجز للفريق. لا يتخذون القرارات بشكل مستقل ولا يستخدمون نهج الأمر والسيطرة."
+      },
+      "domain": {
+        "en": "People",
+        "ar": "الأفراد"
+      }
     }
   ]
 }
