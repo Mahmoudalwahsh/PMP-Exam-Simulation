@@ -21,7 +21,7 @@ export default function ExamSelection() {
 
   const handleStartExam = () => {
     if (selectedExamId) {
-      setLocation(`/exam/${selectedExamId}`);
+      setLocation(`/tester-name/${selectedExamId}`);
     }
   };
 
@@ -29,6 +29,16 @@ export default function ExamSelection() {
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center">
+      <div className="absolute top-4 right-4">
+        <Button
+          data-testid="button-admin-access"
+          variant="outline"
+          size="sm"
+          onClick={() => setLocation("/admin/login")}
+        >
+          {language === 'en' ? 'Admin' : 'إدارة'}
+        </Button>
+      </div>
       <div className="max-w-2xl w-full mx-auto px-4 sm:px-6 py-6 sm:py-12">
         <div className="mb-6 sm:mb-12 text-center space-y-4 sm:space-y-6">
           <div className="flex justify-center items-center gap-4" dir="ltr">

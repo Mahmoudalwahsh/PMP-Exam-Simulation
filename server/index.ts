@@ -1,4 +1,6 @@
 import express, { type Request, Response, NextFunction } from "express";
+import session from "express-session";
+import MemoryStore from "memorystore";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 
@@ -9,12 +11,39 @@ declare module 'http' {
     rawBody: unknown
   }
 }
+
+// Session configuration
+const store = new (MemoryStore(session))({
+  checkPeriod: 86400000, // 24 hours
+});
+
+const sessionSecret = process.env.SESSION_SECRET;
+if (!sessionSecret) {
+  console.warn("⚠️  WARNING: SESSION_SECRET not set. Using insecure fallback. Set SESSION_SECRET environment variable for production.");
+}
+
+app.use(
+  session({
+    secret: sessionSecret || "insecure-dev-secret-change-in-production",
+    resave: false,
+    saveUninitialized: false,
+    store,
+    cookie: { 
+      secure: process.env.NODE_ENV === "production", // Enable secure cookies in production
+      httpOnly: true, 
+      maxAge: 24 * 60 * 60 * 1000, // 24 hours
+      sameSite: "lax"
+    },
+  })
+);
+
 app.use(express.json({
+  limit: "50mb",
   verify: (req, _res, buf) => {
     req.rawBody = buf;
   }
 }));
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false, limit: "50mb" }));
 
 app.use((req, res, next) => {
   const start = Date.now();

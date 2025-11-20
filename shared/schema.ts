@@ -126,6 +126,19 @@ export const examResultSchema = z.object({
   questionResults: z.array(questionResultSchema),
 });
 
+// Exam test record schema (for admin history)
+export const examTestRecordSchema = z.object({
+  id: z.string(),
+  testerName: z.string(),
+  examId: z.string(),
+  examTitle: z.string(),
+  score: z.number(),
+  percentage: z.number(),
+  totalQuestions: z.number(),
+  timestamp: z.number(), // Unix timestamp
+  domainResults: z.array(domainResultSchema),
+});
+
 // Type exports
 export type BilingualText = z.infer<typeof bilingualTextSchema>;
 export type SingleAnswerQuestion = z.infer<typeof singleAnswerQuestionSchema>;
@@ -141,6 +154,7 @@ export type SingleQuestionResult = z.infer<typeof singleQuestionResultSchema>;
 export type MultipleQuestionResult = z.infer<typeof multipleQuestionResultSchema>;
 export type QuestionResult = z.infer<typeof questionResultSchema>;
 export type ExamResult = z.infer<typeof examResultSchema>;
+export type ExamTestRecord = z.infer<typeof examTestRecordSchema>;
 
 // API response types
 export type ExamListItem = {

@@ -223,20 +223,85 @@ export default function ExamInterface() {
     }
   };
 
-  const handleSubmitExam = () => {
+  const handleSubmitExam = async () => {
     if (!exam) return;
+    
+    const testerName = sessionStorage.getItem(`testerName-${examId}`) || "Anonymous";
+    
+    // Calculate results
+    const domainResults = exam.questions.reduce((acc: any, question) => {
+      const answer = answers.find(a => a.questionId === question.id);
+      let isCorrect = false;
+      
+      if (question.type === "single") {
+        const singleAnswer = answer as any;
+        isCorrect = singleAnswer?.selectedAnswer === question.correctAnswer;
+      } else {
+        const multiAnswer = answer as any;
+        isCorrect = 
+          multiAnswer?.selectedAnswers &&
+          multiAnswer.selectedAnswers.length === question.correctAnswers.length &&
+          multiAnswer.selectedAnswers.every((a: number) => question.correctAnswers.includes(a));
+      }
+      
+      const domainText = typeof question.domain === 'string' ? question.domain : question.domain.en;
+      const existingDomain = acc.find((d: any) => d.domain === domainText);
+      
+      if (existingDomain) {
+        existingDomain.total++;
+        if (isCorrect) existingDomain.correct++;
+      } else {
+        acc.push({
+          domain: domainText,
+          correct: isCorrect ? 1 : 0,
+          total: 1,
+          percentage: 0,
+        });
+      }
+      return acc;
+    }, []);
+    
+    domainResults.forEach((d: any) => {
+      d.percentage = (d.correct / d.total) * 100;
+    });
+    
+    const correctAnswers = domainResults.reduce((sum: number, d: any) => sum + d.correct, 0);
+    const percentage = (correctAnswers / exam.questions.length) * 100;
+    
+    // Save to backend
+    try {
+      await fetch("/api/results", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        body: JSON.stringify({
+          testerName,
+          examId: exam.id,
+          examTitle: typeof exam.title === 'string' ? exam.title : exam.title.en,
+          score: correctAnswers,
+          percentage,
+          totalQuestions: exam.questions.length,
+          timestamp: Date.now(),
+          domainResults,
+        }),
+      });
+    } catch (error) {
+      console.error("Error saving result:", error);
+    }
     
     const results = {
       examId: exam.id,
       examTitle: exam.title,
       answers,
       questions: exam.questions,
+      testerName,
     };
     
     // Store results in sessionStorage for the results page
     sessionStorage.setItem('examResults', JSON.stringify(results));
     // Clear exam progress since it's now submitted
     sessionStorage.removeItem(`examProgress-${examId}`);
+    sessionStorage.removeItem(`testerName-${examId}`);
     setLocation(`/results`);
   };
 
