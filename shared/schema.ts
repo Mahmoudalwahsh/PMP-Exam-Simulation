@@ -43,6 +43,7 @@ export const examSchema = z.object({
   description: bilingualTextSchema,
   duration: z.number(), // in minutes
   questions: z.array(questionSchema),
+  hidden: z.boolean().optional().default(false), // Hide exam from public listing
 });
 
 // Single answer user answer schema
@@ -163,4 +164,5 @@ export type ExamListItem = {
   description: BilingualText;
   questionCount: number;
   duration: number;
+  hidden?: boolean;
 };
