@@ -3,6 +3,12 @@
 ## Overview
 The PMP Exam Simulator is a comprehensive web application designed to help users prepare for the Project Management Professional (PMP) certification exam. It offers realistic exam simulations with 180 questions across the People, Process, and Business Environment domains. Key features include an exam timer, question navigation, answer marking, and detailed performance analytics, providing a thorough practice environment for aspiring PMP professionals.
 
+## Recent Changes (December 6, 2025)
+- **Access Code Protection**: Site-wide access code system to control student access (default: PMP2024)
+- **Exam Visibility Control**: Administrators can hide/show exams without deleting them
+- **Patrons Branding**: Logo added to access code page and increased size across the app
+- **Exam Data Fixes**: Fixed 6 questions with incorrect answer configurations
+
 ## User Preferences
 Preferred communication style: Simple, everyday language.
 

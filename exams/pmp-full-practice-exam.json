@@ -1,7 +1,13 @@
 {
   "id": "pmp-full-exam-1",
-  "title": "PMP Full Practice Exam - 180 Questions",
-  "description": "Complete 180-question PMP practice exam covering People, Process, and Business Environment domains with 230-minute time limit",
+  "title": {
+    "en": "PMP Practice Exam - English",
+    "ar": "PMP Full Practice Exam - 180 Questions"
+  },
+  "description": {
+    "en": "Complete 180-question PMP practice exam covering People, Process, and Business Environment domains with 230-minute time limit",
+    "ar": "Complete 180-question PMP practice exam covering People, Process, and Business Environment domains with 230-minute time limit"
+  },
   "duration": 230,
   "questions": [
     {
@@ -2344,5 +2350,6 @@
       "explanation": "The correct answer aligns with the PMBOK Guide principles of proactive management and following established processes while maintaining flexibility.",
       "domain": "Business Environment"
     }
-  ]
+  ],
+  "hidden": true
 }

@@ -1,13 +1,17 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "wouter";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useMutation } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { ExamHistory } from "@/components/ExamHistory";
+import { ExamLibrary } from "@/components/ExamLibrary";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Eye, EyeOff, Key, Save } from "lucide-react";
+import { apiRequest, queryClient } from "@/lib/queryClient";
 import type { ExamTestRecord } from "@shared/schema";
+import patronsLogo from "@assets/Patrons_Logo_Website_3AOIUWA_1762765779728.png";
 
 export default function AdminDashboard() {
   const [, navigate] = useLocation();
@@ -19,6 +23,8 @@ export default function AdminDashboard() {
   const [examDescription, setExamDescription] = useState("");
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [preview, setPreview] = useState<string>("");
+  const [newAccessCode, setNewAccessCode] = useState("");
+  const [showAccessCode, setShowAccessCode] = useState(false);
   const pageSize = 10;
 
   useEffect(() => {
@@ -38,6 +44,39 @@ export default function AdminDashboard() {
       return res.json();
     },
     enabled: true,
+  });
+
+  const { data: accessCodeData, refetch: refetchAccessCode } = useQuery<{ accessCode: string }>({
+    queryKey: ["/api/admin/site-access"],
+    queryFn: async () => {
+      const res = await fetch("/api/admin/site-access", {
+        credentials: "include",
+      });
+      if (!res.ok) throw new Error("Failed to fetch access code");
+      return res.json();
+    },
+  });
+
+  const updateAccessCodeMutation = useMutation({
+    mutationFn: async (code: string) => {
+      const response = await apiRequest("PUT", "/api/admin/site-access", { accessCode: code });
+      return response.json();
+    },
+    onSuccess: () => {
+      toast({
+        title: "Success",
+        description: "Access code updated successfully",
+      });
+      setNewAccessCode("");
+      refetchAccessCode();
+    },
+    onError: () => {
+      toast({
+        title: "Error",
+        description: "Failed to update access code",
+        variant: "destructive",
+      });
+    },
   });
 
   const checkAuth = async () => {
@@ -180,7 +219,15 @@ export default function AdminDashboard() {
     <div className="min-h-screen bg-background">
       <header className="border-b bg-card">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Admin Dashboard</h1>
+          <div className="flex items-center gap-4">
+            <img 
+              src={patronsLogo} 
+              alt="Patrons Logo" 
+              className="h-12 object-contain"
+              data-testid="img-patrons-logo-admin-dashboard"
+            />
+            <h1 className="text-2xl font-bold">Admin Dashboard</h1>
+          </div>
           <div className="flex items-center gap-4">
             <span className="text-sm text-secondary-foreground">
               Welcome, {username}
@@ -197,12 +244,25 @@ export default function AdminDashboard() {
       </header>
 
       <main className="container mx-auto px-4 py-8">
-        <Tabs defaultValue="upload" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-3" data-testid="admin-tabs">
+        <Tabs defaultValue="library" className="space-y-6">
+          <TabsList className="grid w-full grid-cols-5" data-testid="admin-tabs">
+            <TabsTrigger value="library" data-testid="tab-library">Exam Library</TabsTrigger>
             <TabsTrigger value="upload" data-testid="tab-upload">Upload Exam</TabsTrigger>
             <TabsTrigger value="history" data-testid="tab-history">Exam History</TabsTrigger>
+            <TabsTrigger value="settings" data-testid="tab-settings">Settings</TabsTrigger>
             <TabsTrigger value="instructions" data-testid="tab-instructions">Instructions</TabsTrigger>
           </TabsList>
+
+          {/* Exam Library Tab */}
+          <TabsContent value="library">
+            <Card className="p-6">
+              <h2 className="text-xl font-bold mb-6">Exam Library</h2>
+              <p className="text-muted-foreground mb-6">
+                View, edit, and manage your exams. Click on an exam to edit its details and questions.
+              </p>
+              <ExamLibrary onEditExam={(examId) => navigate(`/admin/exam/${examId}`)} />
+            </Card>
+          </TabsContent>
 
           {/* Upload Tab */}
           <TabsContent value="upload" className="space-y-6">
@@ -311,6 +371,118 @@ export default function AdminDashboard() {
                 onPageChange={setCurrentPage}
                 isLoading={isLoadingResults}
               />
+            </Card>
+          </TabsContent>
+
+          {/* Settings Tab */}
+          <TabsContent value="settings">
+            <Card className="p-6">
+              <h2 className="text-xl font-bold mb-6">Site Settings</h2>
+              
+              <div className="space-y-6">
+                <div className="border rounded-lg p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                      <Key className="w-5 h-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg">Site Access Code</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Students need this code to access the exam simulator
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div>
+                      <label className="block text-sm font-medium mb-2">Current Access Code</label>
+                      <div className="flex items-center gap-2">
+                        <div className="relative flex-1">
+                          <Input
+                            type={showAccessCode ? "text" : "password"}
+                            value={accessCodeData?.accessCode || ""}
+                            readOnly
+                            className="pr-10 font-mono text-lg"
+                            data-testid="input-current-access-code"
+                          />
+                          <Button
+                            type="button"
+                            variant="ghost"
+                            size="icon"
+                            className="absolute right-1 top-1/2 -translate-y-1/2 h-8 w-8"
+                            onClick={() => setShowAccessCode(!showAccessCode)}
+                            data-testid="button-toggle-code-visibility"
+                          >
+                            {showAccessCode ? (
+                              <EyeOff className="h-4 w-4" />
+                            ) : (
+                              <Eye className="h-4 w-4" />
+                            )}
+                          </Button>
+                        </div>
+                        <Button
+                          variant="outline"
+                          onClick={() => {
+                            navigator.clipboard.writeText(accessCodeData?.accessCode || "");
+                            toast({
+                              title: "Copied",
+                              description: "Access code copied to clipboard",
+                            });
+                          }}
+                          data-testid="button-copy-access-code"
+                        >
+                          Copy
+                        </Button>
+                      </div>
+                    </div>
+
+                    <div className="border-t pt-4">
+                      <label className="block text-sm font-medium mb-2">Change Access Code</label>
+                      <div className="flex items-center gap-2">
+                        <Input
+                          type="text"
+                          placeholder="Enter new access code (min 4 characters)"
+                          value={newAccessCode}
+                          onChange={(e) => setNewAccessCode(e.target.value)}
+                          className="flex-1"
+                          data-testid="input-new-access-code"
+                        />
+                        <Button
+                          onClick={() => {
+                            if (newAccessCode.trim().length >= 4) {
+                              updateAccessCodeMutation.mutate(newAccessCode.trim());
+                            } else {
+                              toast({
+                                title: "Error",
+                                description: "Access code must be at least 4 characters",
+                                variant: "destructive",
+                              });
+                            }
+                          }}
+                          disabled={updateAccessCodeMutation.isPending || newAccessCode.trim().length < 4}
+                          data-testid="button-update-access-code"
+                        >
+                          <Save className="w-4 h-4 mr-2" />
+                          {updateAccessCodeMutation.isPending ? "Saving..." : "Update"}
+                        </Button>
+                      </div>
+                      <p className="text-xs text-muted-foreground mt-2">
+                        Changing the code will require all students to enter the new code to access the simulator.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-muted/50 border rounded-lg p-4">
+                  <h4 className="font-medium mb-2">Tips for Access Code Security</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
+                    <li>Change the code periodically (e.g., monthly) to prevent unauthorized sharing</li>
+                    <li>Use a memorable but not easily guessable code</li>
+                    <li>Share the code only with enrolled students</li>
+                    <li>If you suspect the code has been shared, change it immediately</li>
+                  </ul>
+                </div>
+              </div>
             </Card>
           </TabsContent>
 
@@ -442,7 +614,7 @@ export default function AdminDashboard() {
             variant="outline"
             onClick={() => navigate("/")}
           >
-            Back to Exam Library
+            Back Home
           </Button>
         </div> 
       </main>

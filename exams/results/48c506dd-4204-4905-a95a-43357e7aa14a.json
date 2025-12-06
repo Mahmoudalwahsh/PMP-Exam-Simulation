@@ -1,0 +1,30 @@
+{
+  "testerName": "khaled",
+  "examId": "pmp-exam-full-180-bilingual",
+  "examTitle": "PMP Exam Full - English & Arabic",
+  "score": 3,
+  "percentage": 1.6666666666666667,
+  "totalQuestions": 180,
+  "timestamp": 1764980993667,
+  "domainResults": [
+    {
+      "domain": "Process",
+      "correct": 2,
+      "total": 58,
+      "percentage": 3.4482758620689653
+    },
+    {
+      "domain": "Business Environment",
+      "correct": 1,
+      "total": 11,
+      "percentage": 9.090909090909092
+    },
+    {
+      "domain": "People",
+      "correct": 0,
+      "total": 111,
+      "percentage": 0
+    }
+  ],
+  "id": "48c506dd-4204-4905-a95a-43357e7aa14a"
+}

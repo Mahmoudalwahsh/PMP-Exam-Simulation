@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
+import patronsLogo from "@assets/Patrons_Logo_Website_3AOIUWA_1762765779728.png";
 
 export default function AdminLogin() {
   const [, navigate] = useLocation();
@@ -62,6 +63,14 @@ export default function AdminLogin() {
         </Button>
       </div>
       <Card className="w-full max-w-md p-8">
+        <div className="flex justify-center mb-6">
+          <img 
+            src={patronsLogo} 
+            alt="Patrons Logo" 
+            className="h-20 object-contain"
+            data-testid="img-patrons-logo-admin-login"
+          />
+        </div>
         <h1 className="text-2xl font-bold mb-6 text-center">Admin Login</h1>
         <form onSubmit={handleLogin} className="space-y-4">
           <div>

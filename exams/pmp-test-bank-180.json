@@ -1,7 +1,7 @@
 {
   "id": "pmp-test-bank-180",
   "title": {
-    "en": "PMP Test Bank - 180 Questions",
+    "en": "PMP Exam Full - English",
     "ar": "[AR] PMP Test Bank - 180 Questions"
   },
   "description": {
@@ -324,14 +324,7 @@
         "en": "People",
         "ar": "الأفراد"
       },
-      "correctAnswers": [
-        0,
-        1,
-        2,
-        3
-      ],
-      "minSelections": 2,
-      "maxSelections": 4
+      "correctAnswer": 1
     },
     {
       "id": 10,
@@ -3238,12 +3231,10 @@
       },
       "correctAnswers": [
         0,
-        1,
-        2,
-        3
+        1
       ],
       "minSelections": 2,
-      "maxSelections": 4
+      "maxSelections": 2
     },
     {
       "id": 93,
@@ -3523,14 +3514,7 @@
         "en": "People",
         "ar": "الأفراد"
       },
-      "correctAnswers": [
-        0,
-        1,
-        2,
-        3
-      ],
-      "minSelections": 2,
-      "maxSelections": 4
+      "correctAnswer": 3
     },
     {
       "id": 101,
@@ -4370,14 +4354,7 @@
         "en": "Process",
         "ar": "العمليات"
       },
-      "correctAnswers": [
-        0,
-        1,
-        2,
-        3
-      ],
-      "minSelections": 2,
-      "maxSelections": 4
+      "correctAnswer": 2
     },
     {
       "id": 125,
@@ -4847,8 +4824,8 @@
           "ar": "[AR] Utilize a web-based kanban board."
         },
         {
-          "en": "Require a monthly individual status report.",
-          "ar": "[AR] Require a monthly individual status report."
+          "en": "Hold daily virtual meetings to review progress.",
+          "ar": "عقد اجتماعات افتراضية يومية لمراجعة التقدم."
         },
         {
           "en": "Implement time-keeping software for team members.",
@@ -4869,12 +4846,10 @@
       },
       "correctAnswers": [
         0,
-        1,
-        2,
-        3
+        1
       ],
       "minSelections": 2,
-      "maxSelections": 4
+      "maxSelections": 2
     },
     {
       "id": 139,
@@ -5434,14 +5409,7 @@
         "en": "People",
         "ar": "الأفراد"
       },
-      "correctAnswers": [
-        0,
-        1,
-        2,
-        3
-      ],
-      "minSelections": 2,
-      "maxSelections": 4
+      "correctAnswer": 3
     },
     {
       "id": 155,
@@ -6364,5 +6332,6 @@
       }
     }
   ],
-  "timeLimit": 230
+  "timeLimit": 230,
+  "hidden": true
 }

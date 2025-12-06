@@ -45,7 +45,7 @@ export default function ExamSelection() {
             <img 
               src={patronsLogo} 
               alt="Patrons Consulting" 
-              className="h-16 sm:h-20 md:h-24 w-auto"
+              className="h-24 sm:h-32 md:h-40 w-auto"
               data-testid="img-patrons-logo"
             />
             <LanguageToggle />

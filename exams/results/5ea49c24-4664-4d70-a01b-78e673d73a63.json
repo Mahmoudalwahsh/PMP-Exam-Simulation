@@ -1,0 +1,30 @@
+{
+  "testerName": "Mariam",
+  "examId": "pmp-exam-full-180-bilingual",
+  "examTitle": "PMP Exam Full - English & Arabic",
+  "score": 0,
+  "percentage": 0,
+  "totalQuestions": 180,
+  "timestamp": 1764979926474,
+  "domainResults": [
+    {
+      "domain": "Process",
+      "correct": 0,
+      "total": 58,
+      "percentage": 0
+    },
+    {
+      "domain": "Business Environment",
+      "correct": 0,
+      "total": 11,
+      "percentage": 0
+    },
+    {
+      "domain": "People",
+      "correct": 0,
+      "total": 111,
+      "percentage": 0
+    }
+  ],
+  "id": "5ea49c24-4664-4d70-a01b-78e673d73a63"
+}
